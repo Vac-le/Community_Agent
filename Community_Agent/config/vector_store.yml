@@ -1,0 +1,14 @@
+store:
+  provider: milvus_lite
+  collection_name: agent
+  persist_directory: vector_db
+  k: 3
+  data_path: data
+  md5_hex_store: md5.txt
+  rebuild_flag_file: vector_db/.rebuild_required
+  allowed_knowledge_file_type: ["txt","pdf"]
+
+chunking:
+  chunk_size: 150
+  chunk_overlap: 20
+  separators: ["\n\n", "\n", ".", "?", "!", "。", "？", "！"]

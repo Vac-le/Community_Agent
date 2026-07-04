@@ -1,0 +1,32 @@
+# RAG 检索与上下文控制配置
+retrieval:
+  top_k: 10
+  dense_top_k: 10
+  bm25_top_k: 10
+  fused_top_k: 10
+  final_k: 3
+  collapse_by_parent: true
+  rrf_k: 60
+
+bm25:
+  k1: 1.5
+  b: 0.75
+
+rerank:
+  enabled: true
+  provider: dashscope
+  model_name: gte-rerank-v2
+  fallback_enabled: true
+
+context:
+  max_doc_chars: 500
+
+retry:
+  max_retry: 3
+  max_context_tokens: 32000
+  trigger_ratio: 0.8
+  recent_rounds: 2
+  summary_max_chars: [200, 150, 100, 50]
+  single_message_max_chars: [600, 500, 400, 300]
+  rag_doc_chars: [500, 300, 200, 150]
+  tool_prompt_max_chars: [1200, 800, 500, 300]

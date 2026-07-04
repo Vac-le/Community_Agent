@@ -1,0 +1,80 @@
+/**
+ * 现代化设计系统 - 社区服务小程序
+ * 基于深蓝+珊瑚红的高级配色方案
+ */
+
+/* ========== 主色系 ========== */
+$uni-color-primary: #1e3a8a;        // 深蓝 - 主色
+$uni-color-primary-light: #3b82f6;  // 亮蓝 - 辅助
+$uni-color-accent: #f97316;         // 珊瑚红 - 强调色
+$uni-color-accent-light: #fed7aa;   // 浅珊瑚 - 背景
+
+/* ========== 功能色 ========== */
+$uni-color-success: #10b981;
+$uni-color-warning: #f59e0b;
+$uni-color-error: #ef4444;
+$uni-color-info: #06b6d4;
+
+/* ========== 文字颜色 ========== */
+$uni-text-color: #1f2937;           // 主文字 - 深灰
+$uni-text-color-inverse: #ffffff;   // 反色
+$uni-text-color-grey: #6b7280;      // 辅助灰
+$uni-text-color-light: #9ca3af;     // 浅灰
+$uni-text-color-placeholder: #d1d5db;
+$uni-text-color-disable: #e5e7eb;
+
+/* ========== 背景颜色 ========== */
+$uni-bg-color: #ffffff;
+$uni-bg-color-grey: #f9fafb;
+$uni-bg-color-light: #f3f4f6;
+$uni-bg-color-hover: #eff6ff;
+$uni-bg-color-mask: rgba(0, 0, 0, 0.45);
+
+/* ========== 边框颜色 ========== */
+$uni-border-color: #e5e7eb;
+$uni-border-color-light: #f3f4f6;
+
+/* ========== 尺寸变量 ========== */
+$uni-font-size-xs: 12px;
+$uni-font-size-sm: 13px;
+$uni-font-size-base: 14px;
+$uni-font-size-lg: 16px;
+$uni-font-size-xl: 18px;
+$uni-font-size-2xl: 20px;
+
+/* ========== 圆角 ========== */
+$uni-border-radius-sm: 4px;
+$uni-border-radius-base: 8px;
+$uni-border-radius-lg: 12px;
+$uni-border-radius-xl: 16px;
+$uni-border-radius-2xl: 20px;
+$uni-border-radius-circle: 50%;
+
+/* ========== 间距 ========== */
+$uni-spacing-xs: 4px;
+$uni-spacing-sm: 8px;
+$uni-spacing-base: 12px;
+$uni-spacing-lg: 16px;
+$uni-spacing-xl: 20px;
+$uni-spacing-2xl: 24px;
+$uni-spacing-3xl: 32px;
+
+/* ========== 阴影 ========== */
+$uni-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$uni-shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$uni-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$uni-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$uni-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+/* ========== 过渡 ========== */
+$uni-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+$uni-transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+$uni-transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+/* ========== 字体 ========== */
+$uni-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+
+/* ========== 透明度 ========== */
+$uni-opacity-disabled: 0.5;
+
+@import './styles-service-pages.scss';

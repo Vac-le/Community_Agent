@@ -1,0 +1,368 @@
+2026-06-03 12:50:47,756 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_01.txt内容加载成功
+2026-06-03 12:50:56,068 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_02.txt内容加载成功
+2026-06-03 12:51:04,758 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_03.txt内容加载成功
+2026-06-03 12:51:13,041 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_04.txt内容加载成功
+2026-06-03 12:51:21,246 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_05.txt内容加载成功
+2026-06-03 12:51:29,610 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_06.txt内容加载成功
+2026-06-03 12:51:37,962 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_07.txt内容加载成功
+2026-06-03 12:51:46,135 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_08.txt内容加载成功
+2026-06-03 12:51:54,607 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_09.txt内容加载成功
+2026-06-03 12:52:03,020 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\压测知识库_10.txt内容加载成功
+2026-06-03 12:52:07,599 - agent - INFO - vector_store.py:222 - [加载知识库]C:\Users\一叶知秋\Desktop\新社区项目\Agent+RAG项目\data\社区公告.txt内容加载成功
+2026-06-03 13:04:15,128 - agent - INFO - hybrid_retriever.py:81 - [RAG][BM25] rank_bm25 索引文档块数量=915
+2026-06-03 13:04:18,454 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 13:06:23,823 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 13:06:25,880 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 13:12:23,743 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 13:12:29,193 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 13:12:31,137 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 13:13:08,924 - agent - INFO - executor.py:65 - [MultiAgent] query=根据我的历史订单数据，生成一份折线图，并发送到我的邮箱中
+2026-06-03 13:13:14,341 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['report'] reason=用户需要根据历史订单数据生成折线图并发送邮件，属于数据可视化和邮件发送任务，应由 report 处理
+2026-06-03 13:13:14,341 - agent - INFO - executor.py:192 - [Supervisor] routes=['report']
+2026-06-03 13:13:14,347 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:2条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:13:18,100 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{}
+2026-06-03 13:13:18,100 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:13:18,100 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:query_user_order_history
+2026-06-03 13:13:18,101 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 13:13:20,750 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:query_user_order_history 调用成功
+2026-06-03 13:13:20,751 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "用户餐饮订单", "data": [{"id": 93, "startTime": "2026-05-24 15:02:27", "endTime": null, "user": {"id": 1, "name": "张三", "age": 0, "address": null, "phone": null, "gender": null, "regTime": null, "community": null, "password": null, "token": null, "childrenName": null, "childrenPhone": null, "menus": null, "type": null, "communityId": 0, "img": null, "userFace": null, "cityId": 0}, "send": null, "type": null, "amount": 63, "deliveryAddress": "汉中市", "deliveryPhone": "17764777839", "remark": "不要辣椒、不要香菜", "orderStatus": 0, "community": null, "items": [{"id": 1, "community": null, "name": "清蒸鲈鱼", "description": null, "img": null, "price": 28, "foodType": null, "quantity": 1}, {"id": 2, "community": null, "name": "青菜豆腐", "description": null, "img": null, "price": 8, "foodType": null, "quantity": 1}, {"id": 3, "community": null, "name": "冬瓜排骨汤", "description": null, "img": null, "price": 25, "foodType": null, "quantity": 1}, {"id": 7, "community": null, "name": "米饭", "description": null, "img": null, "price": 1, "foodType": null, "quantity": 2}], "purchasesItems": null, "OrderDate": null, "home": null, "orderDate": null}, {"id": 90, "startTime": "2026-05-20 13 ...[truncated,total=53005 chars]
+2026-06-03 13:13:20,755 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:4条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:13:46,812 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'data': [{'time': '2025-09-26', 'value': 110}, {'time': '2025-09-28', 'value': 68}, {'time': '2025-10-05', 'value': 60}, {'time': '2025-10-08', 'value': 46}, {'time': '2025-10-09', 'value': 42}, {'time': '2025-10-23', 'value': 18}, {'time': '2025-11-17', 'value': 8}, {'time': '2025-11-18', 'value': 71}, {'time': '2026-03-29', 'value': 70}, {'time': '2026-04-08', 'value': 2}, {'time': '2026-04-09', 'value': 123}, {'time': '2026-04-13', 'value': 246}, {'time': '2026-04-16', 'value': 279}, {'time': '2026-04-17', 'value': 129}, {'time': '2026-05-12', 'value': 246}, {'time': '2026-05-13', 'value': 100}, {'time': '2026-05-14', 'value': 139}, {'time': '2026-05-20', 'value': 107}, {'time': '2026-05-24', 'value': 63}], 'title': '历史订单金额趋势图', 'axisXTitle': '日期', 'axisYTitle': '订单金额（元）', 'width': 800, 'height': 500}
+2026-06-03 13:13:46,812 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:generate_line_chart
+2026-06-03 13:13:46,812 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'data': [{'time': '2025-09-26', 'value': 110}, {'time': '2025-09-28', 'value': 68}, {'time': '2025-10-05', 'value': 60}, {'time': '2025-10-08', 'value': 46}, {'time': '2025-10-09', 'value': 42}, {'time': '2025-10-23', 'value': 18}, {'time': '2025-11-17', 'value': 8}, {'time': '2025-11-18', 'value': 71}, {'time': '2026-03-29', 'value': 70}, {'time': '2026-04-08', 'value': 2}, {'time': '2026-04-09', 'value': 123}, {'time': '2026-04-13', 'value': 246}, {'time': '2026-04-16', 'value': 279}, {'time': '2026-04-17', 'value': 129}, {'time': '2026-05-12', 'value': 246}, {'time': '2026-05-13', 'value': 100}, {'time': '2026-05-14', 'value': 139}, {'time': '2026-05-20', 'value': 107}, {'time': '2026-05-24', 'value': 63}], 'title': '历史订单金额趋势图', 'axisXTitle': '日期', 'axisYTitle': '订单金额（元）', 'width': 800, 'height': 500}
+2026-06-03 13:13:51,514 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:generate_line_chart 调用成功
+2026-06-03 13:13:51,514 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content=[{'type': 'text', 'text': 'https://mdn.alipayobjects.com/one_clip/afts/img/a8fCQJc6KhYAAAAATmAAAAgAoEACAQFr/original', 'id': 'lc_a85adb1f-6d91-463a-8227-479e86314a10'}] name='generate_line_chart' tool_call_id='call_30cad327f29f4ee1bb166898'
+2026-06-03 13:13:51,517 - agent - INFO - worker.py:168 - [MCP图表] worker=generate_line_chart url=https://mdn.alipayobjects.com/one_clip/afts/img/a8fCQJc6KhYAAAAATmAAAAgAoEACAQFr/original
+2026-06-03 13:13:51,518 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:6条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:13:59,084 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'email': '2087376402@qq.com'}
+2026-06-03 13:13:59,084 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 13:13:59,084 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:save_user_email_to_memory
+2026-06-03 13:13:59,084 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'email': '2087376402@qq.com', 'user_id': 1, 'community_id': 1}
+2026-06-03 13:13:59,086 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:save_user_email_to_memory 调用成功
+2026-06-03 13:13:59,087 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "邮箱已存在", "data": {"saved": false, "reason": "邮箱已存在", "email": "2087376402@qq.com"}}' name='save_user_email_to_memory' tool_call_id='call_6ee90dd15f7143a3875afac3'
+2026-06-03 13:13:59,089 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:8条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:14:08,102 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/a8fCQJc6KhYAAAAATmAAAAgAoEACAQFr/original', 'agent_message': '根据您的历史订单数据生成的折线图显示了订单金额随时间的变化趋势。从2025年9月到2026年5月，您的消费金额存在明显波动，近期在4月中旬和5月中旬出现了消费高峰，其中4月16日单日消费最高达到279元。总体来看，您的餐饮消费呈现出间歇性集中的特点。', 'subject': '历史订单金额趋势分析图表', 'chart_title': '历史订单金额趋势图', 'to_email': '2087376402@qq.com', 'user_email_from_message': '2087376402@qq.com', 'user_id': '1', 'community_id': '1'}
+2026-06-03 13:14:08,103 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:14:08,103 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 13:14:08,103 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:send_agent_chart_email
+2026-06-03 13:14:08,104 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/a8fCQJc6KhYAAAAATmAAAAgAoEACAQFr/original', 'agent_message': '根据您的历史订单数据生成的折线图显示了订单金额随时间的变化趋势。从2025年9月到2026年5月，您的消费金额存在明显波动，近期在4月中旬和5月中旬出现了消费高峰，其中4月16日单日消费最高达到279元。总体来看，您的餐饮消费呈现出间歇性集中的特点。', 'subject': '历史订单金额趋势分析图表', 'chart_title': '历史订单金额趋势图', 'to_email': '2087376402@qq.com', 'user_email_from_message': '2087376402@qq.com', 'user_id': 1, 'community_id': 1, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 13:14:10,093 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:send_agent_chart_email 调用成功
+2026-06-03 13:14:10,093 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "图表分析结果已发送到用户邮箱", "data": {"toEmail": "2087376402@qq.com", "subject": "历史订单金额趋势分析图表", "chartTitle": "历史订单金额趋势图", "status": "SENT"}}' name='send_agent_chart_email' tool_call_id='call_5d91e6e20c0c45a3840e8f9b'
+2026-06-03 13:14:10,096 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:10条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:15:18,739 - agent - INFO - executor.py:311 - [Reflector] passed=False should_retry=True attempt=0 issues=['Worker声称4月16日单日消费最高点为279元，但根据订单数据计算，4月16日所有订单金额总和为277元，存在2元误差。', 'Worker在未获得工具确认的情况下，添加了图表内容的具体描述（如时间范围、消费高峰、最高点数字），这属于编造业务事实，违反了规则7。']
+2026-06-03 13:15:26,854 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['report'] reason=用户需要根据历史订单数据生成图表并发送邮件，这属于 report 的职责范围（图表生成、可视化、数据分析、发送邮件）
+2026-06-03 13:15:26,855 - agent - INFO - executor.py:192 - [Supervisor] routes=['report']
+2026-06-03 13:15:26,861 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:3条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:15:33,297 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'token': 'None'}
+2026-06-03 13:15:33,297 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:15:33,297 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:query_user_order_history
+2026-06-03 13:15:33,297 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 13:15:33,914 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:query_user_order_history 调用成功
+2026-06-03 13:15:33,914 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "用户餐饮订单", "data": [{"id": 93, "startTime": "2026-05-24 15:02:27", "endTime": null, "user": {"id": 1, "name": "张三", "age": 0, "address": null, "phone": null, "gender": null, "regTime": null, "community": null, "password": null, "token": null, "childrenName": null, "childrenPhone": null, "menus": null, "type": null, "communityId": 0, "img": null, "userFace": null, "cityId": 0}, "send": null, "type": null, "amount": 63, "deliveryAddress": "汉中市", "deliveryPhone": "17764777839", "remark": "不要辣椒、不要香菜", "orderStatus": 0, "community": null, "items": [{"id": 1, "community": null, "name": "清蒸鲈鱼", "description": null, "img": null, "price": 28, "foodType": null, "quantity": 1}, {"id": 2, "community": null, "name": "青菜豆腐", "description": null, "img": null, "price": 8, "foodType": null, "quantity": 1}, {"id": 3, "community": null, "name": "冬瓜排骨汤", "description": null, "img": null, "price": 25, "foodType": null, "quantity": 1}, {"id": 7, "community": null, "name": "米饭", "description": null, "img": null, "price": 1, "foodType": null, "quantity": 2}], "purchasesItems": null, "OrderDate": null, "home": null, "orderDate": null}, {"id": 90, "startTime": "2026-05-20 13 ...[truncated,total=53005 chars]
+2026-06-03 13:15:33,918 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:5条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:16:18,911 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'data': [{'time': '2025-09-26', 'value': 110}, {'time': '2025-09-28', 'value': 68}, {'time': '2025-10-05', 'value': 60}, {'time': '2025-10-08', 'value': 46}, {'time': '2025-10-09', 'value': 42}, {'time': '2025-10-23', 'value': 18}, {'time': '2025-11-17', 'value': 8}, {'time': '2025-11-18', 'value': 71}, {'time': '2026-03-29', 'value': 70}, {'time': '2026-04-08', 'value': 2}, {'time': '2026-04-09', 'value': 123}, {'time': '2026-04-13', 'value': 246}, {'time': '2026-04-16', 'value': 277}, {'time': '2026-04-17', 'value': 131}, {'time': '2026-05-12', 'value': 246}, {'time': '2026-05-13', 'value': 100}, {'time': '2026-05-14', 'value': 139}, {'time': '2026-05-20', 'value': 107}, {'time': '2026-05-24', 'value': 63}], 'title': '历史订单金额趋势', 'axisXTitle': '日期', 'axisYTitle': '金额(元)'}
+2026-06-03 13:16:18,912 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:generate_line_chart
+2026-06-03 13:16:18,912 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'data': [{'time': '2025-09-26', 'value': 110}, {'time': '2025-09-28', 'value': 68}, {'time': '2025-10-05', 'value': 60}, {'time': '2025-10-08', 'value': 46}, {'time': '2025-10-09', 'value': 42}, {'time': '2025-10-23', 'value': 18}, {'time': '2025-11-17', 'value': 8}, {'time': '2025-11-18', 'value': 71}, {'time': '2026-03-29', 'value': 70}, {'time': '2026-04-08', 'value': 2}, {'time': '2026-04-09', 'value': 123}, {'time': '2026-04-13', 'value': 246}, {'time': '2026-04-16', 'value': 277}, {'time': '2026-04-17', 'value': 131}, {'time': '2026-05-12', 'value': 246}, {'time': '2026-05-13', 'value': 100}, {'time': '2026-05-14', 'value': 139}, {'time': '2026-05-20', 'value': 107}, {'time': '2026-05-24', 'value': 63}], 'title': '历史订单金额趋势', 'axisXTitle': '日期', 'axisYTitle': '金额(元)'}
+2026-06-03 13:16:21,498 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:generate_line_chart 调用成功
+2026-06-03 13:16:21,499 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content=[{'type': 'text', 'text': 'https://mdn.alipayobjects.com/one_clip/afts/img/zMdVRKEBVN4AAAAATHAAAAgAoEACAQFr/original', 'id': 'lc_3089eeb5-bb9d-47a7-8df9-15728c14d932'}] name='generate_line_chart' tool_call_id='call_132d947e4f1a4697a2038221'
+2026-06-03 13:16:21,502 - agent - INFO - worker.py:168 - [MCP图表] worker=generate_line_chart url=https://mdn.alipayobjects.com/one_clip/afts/img/zMdVRKEBVN4AAAAATHAAAAgAoEACAQFr/original
+2026-06-03 13:16:21,503 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:7条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:16:26,535 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'email': '2087376402@qq.com'}
+2026-06-03 13:16:26,535 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 13:16:26,535 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:save_user_email_to_memory
+2026-06-03 13:16:26,535 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'email': '2087376402@qq.com', 'user_id': 1, 'community_id': 1}
+2026-06-03 13:16:26,537 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:save_user_email_to_memory 调用成功
+2026-06-03 13:16:26,537 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "邮箱已存在", "data": {"saved": false, "reason": "邮箱已存在", "email": "2087376402@qq.com"}}' name='save_user_email_to_memory' tool_call_id='call_ad6a94d69089478aa6fbbd29'
+2026-06-03 13:16:26,540 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:9条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:16:33,072 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/zMdVRKEBVN4AAAAATHAAAAgAoEACAQFr/original', 'agent_message': '根据您的历史订单数据生成的折线图，展示了从2025年9月至2026年5月期间订单金额的变化趋势。', 'subject': '历史订单金额趋势分析图表', 'chart_title': '历史订单金额趋势图', 'user_id': '1', 'community_id': '1'}
+2026-06-03 13:16:33,072 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:16:33,073 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 13:16:33,073 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:send_agent_chart_email
+2026-06-03 13:16:33,073 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/zMdVRKEBVN4AAAAATHAAAAgAoEACAQFr/original', 'agent_message': '根据您的历史订单数据生成的折线图，展示了从2025年9月至2026年5月期间订单金额的变化趋势。', 'subject': '历史订单金额趋势分析图表', 'chart_title': '历史订单金额趋势图', 'user_id': 1, 'community_id': 1, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 13:16:34,889 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:send_agent_chart_email 调用成功
+2026-06-03 13:16:34,890 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "图表分析结果已发送到用户邮箱", "data": {"toEmail": "2087376402@qq.com", "subject": "历史订单金额趋势分析图表", "chartTitle": "历史订单金额趋势图", "status": "SENT"}}' name='send_agent_chart_email' tool_call_id='call_ef0a7f4ec09b4078b9a9c20b'
+2026-06-03 13:16:34,893 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:11条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:16:54,862 - agent - INFO - executor.py:311 - [Reflector] passed=True should_retry=False attempt=1 issues=[]
+2026-06-03 13:17:09,776 - agent - INFO - executor.py:359 - [UserMemory] update_result={'saved': False, 'reason': '用户输入是生成图表并发送到邮箱的请求，这是一个临时任务，不包含新的长期记忆信息。'}
+2026-06-03 13:31:30,560 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 13:31:33,287 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 13:32:03,660 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 13:32:05,845 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 13:32:12,298 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 13:32:14,090 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 13:33:44,970 - agent - INFO - executor.py:65 - [MultiAgent] query=社区机动车限速多少
+2026-06-03 13:33:57,227 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['knowledge'] reason=用户询问社区机动车限速规则，属于社区公告或知识库问答，由 knowledge 处理
+2026-06-03 13:33:57,228 - agent - INFO - executor.py:192 - [Supervisor] routes=['knowledge']
+2026-06-03 13:33:57,231 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:2条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:33:59,475 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'query': '社区机动车限速规定是多少'}
+2026-06-03 13:33:59,476 - agent - INFO - middleware.py:86 - [tool monitor]为 rag_summarize 注入 max_doc_chars=500
+2026-06-03 13:33:59,476 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:rag_summarize
+2026-06-03 13:33:59,476 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'query': '社区机动车限速规定是多少', 'max_doc_chars': 500}
+2026-06-03 13:34:01,447 - agent - INFO - hybrid_retriever.py:81 - [RAG][BM25] rank_bm25 索引文档块数量=915
+2026-06-03 13:34:02,780 - agent - INFO - hybrid_retriever.py:150 - [RAG][BM25] query=社区机动车限速规定是多少 terms=['机动车', '社区', '限速', '是'] recall_docs=10
+2026-06-03 13:34:02,781 - agent - INFO - hybrid_retriever.py:222 - [RAG][Hybrid] dense=10 bm25=10 fused=13 final=10
+2026-06-03 13:34:02,781 - agent - INFO - rag_service.py:62 - [RAG] query=社区机动车限速规定是多少 混合粗召回文档数=10
+2026-06-03 13:34:03,388 - agent - INFO - reranker.py:82 - [RAG][Rerank] 通义重排成功 model=gte-rerank-v2 input_docs=10 output_docs=3
+2026-06-03 13:34:03,388 - agent - INFO - rag_service.py:68 - [RAG] query=社区机动车限速规定是多少 rerank后文档数=3
+2026-06-03 13:34:10,594 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:rag_summarize 调用成功
+2026-06-03 13:34:10,595 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='根据社区公告规定，机动车进入社区应减速慢行，园区内限速为**5公里/小时**，同时禁止鸣笛、超速行驶、随意变道、占道会车，需礼让行人、老人及儿童。禁止在园区内练车、飙车、试车。补充说明指出，具体限速以社区综合公告和道路标识为准。' name='rag_summarize' tool_call_id='call_abb9f1a787304661b215ee78'
+2026-06-03 13:34:10,598 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:4条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:34:36,980 - agent - INFO - executor.py:311 - [Reflector] passed=True should_retry=False attempt=0 issues=[]
+2026-06-03 13:34:58,824 - agent - INFO - executor.py:359 - [UserMemory] update_result={'saved': False, 'reason': '用户输入是查询社区机动车限速，属于工具可实时查询的事实或当前公告，不包含任何值得跨会话保存的长期记忆信息'}
+2026-06-03 13:45:04,174 - agent - INFO - executor.py:65 - [MultiAgent] query=社区机动车限速多少
+2026-06-03 13:45:20,758 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['knowledge'] reason=用户问题涉及社区机动车限速规则，属于社区服务和知识库问答范畴
+2026-06-03 13:45:20,758 - agent - INFO - executor.py:192 - [Supervisor] routes=['knowledge']
+2026-06-03 13:45:20,762 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:3条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:45:24,914 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'query': '社区机动车限速标准是多少'}
+2026-06-03 13:45:24,914 - agent - INFO - middleware.py:86 - [tool monitor]为 rag_summarize 注入 max_doc_chars=500
+2026-06-03 13:45:24,914 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:rag_summarize
+2026-06-03 13:45:24,914 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'query': '社区机动车限速标准是多少', 'max_doc_chars': 500}
+2026-06-03 13:45:25,606 - agent - INFO - hybrid_retriever.py:150 - [RAG][BM25] query=社区机动车限速标准是多少 terms=['机动车', '标准', '社区', '限速', '是'] recall_docs=10
+2026-06-03 13:45:25,607 - agent - INFO - hybrid_retriever.py:222 - [RAG][Hybrid] dense=10 bm25=10 fused=13 final=10
+2026-06-03 13:45:25,607 - agent - INFO - rag_service.py:62 - [RAG] query=社区机动车限速标准是多少 混合粗召回文档数=10
+2026-06-03 13:45:26,258 - agent - INFO - reranker.py:82 - [RAG][Rerank] 通义重排成功 model=gte-rerank-v2 input_docs=10 output_docs=3
+2026-06-03 13:45:26,258 - agent - INFO - rag_service.py:68 - [RAG] query=社区机动车限速标准是多少 rerank后文档数=3
+2026-06-03 13:45:35,346 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:rag_summarize 调用成功
+2026-06-03 13:45:35,346 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='根据社区公告，园区内机动车限速标准为5公里/小时。' name='rag_summarize' tool_call_id='call_350ff49544c344939bcfddea'
+2026-06-03 13:45:35,348 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:5条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:46:03,872 - agent - INFO - executor.py:311 - [Reflector] passed=True should_retry=False attempt=0 issues=[]
+2026-06-03 13:46:29,492 - agent - INFO - executor.py:359 - [UserMemory] update_result={'saved': False, 'reason': '用户输入是关于社区限速的临时查询，属于可实时查询的事实或当前公告，没有表达长期偏好、身份信息或其他值得跨会话保存的内容。'}
+2026-06-03 13:46:29,885 - agent - INFO - executor.py:65 - [MultiAgent] query=社区机动车限速多少
+2026-06-03 13:46:35,944 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['knowledge'] reason=用户询问社区交通规则（机动车限速），属于社区规则/知识库问答范畴，由 knowledge 处理
+2026-06-03 13:46:35,944 - agent - INFO - executor.py:192 - [Supervisor] routes=['knowledge']
+2026-06-03 13:46:35,949 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:5条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:46:38,987 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'query': '社区机动车限速多少'}
+2026-06-03 13:46:38,987 - agent - INFO - middleware.py:86 - [tool monitor]为 rag_summarize 注入 max_doc_chars=500
+2026-06-03 13:46:38,987 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:rag_summarize
+2026-06-03 13:46:38,987 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'query': '社区机动车限速多少', 'max_doc_chars': 500}
+2026-06-03 13:46:39,675 - agent - INFO - hybrid_retriever.py:150 - [RAG][BM25] query=社区机动车限速多少 terms=['机动车', '社区', '限速'] recall_docs=10
+2026-06-03 13:46:39,675 - agent - INFO - hybrid_retriever.py:222 - [RAG][Hybrid] dense=10 bm25=10 fused=13 final=10
+2026-06-03 13:46:39,676 - agent - INFO - rag_service.py:62 - [RAG] query=社区机动车限速多少 混合粗召回文档数=10
+2026-06-03 13:46:40,305 - agent - INFO - reranker.py:82 - [RAG][Rerank] 通义重排成功 model=gte-rerank-v2 input_docs=10 output_docs=3
+2026-06-03 13:46:40,305 - agent - INFO - rag_service.py:68 - [RAG] query=社区机动车限速多少 rerank后文档数=3
+2026-06-03 13:46:52,935 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:rag_summarize 调用成功
+2026-06-03 13:46:52,936 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='根据社区公告，园区内机动车限速为5公里/小时。具体限速以社区综合公告和道路标识为准。' name='rag_summarize' tool_call_id='call_d7f5fbbf5e464e55af7c0c56'
+2026-06-03 13:46:52,938 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:7条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:47:25,279 - agent - INFO - executor.py:311 - [Reflector] passed=True should_retry=False attempt=0 issues=[]
+2026-06-03 13:47:44,468 - agent - INFO - executor.py:359 - [UserMemory] update_result={'saved': False, 'reason': '用户查询社区机动车限速，这是一个临时查询公告或事实信息，不包含任何用户长期身份、偏好或联系方式等值得跨会话保存的记忆。'}
+2026-06-03 13:48:15,484 - agent - INFO - executor.py:65 - [MultiAgent] query=往我的邮箱中发送一份最近的天气预报折线图和最近的餐饮订单折线图，并且帮我查询社区中针对高温天气的措施
+2026-06-03 13:48:54,704 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['weather', 'report', 'knowledge'] reason=用户需要天气预报折线图和餐饮订单折线图发送邮件，因此先查询天气数据（weather），再由 report 生成折线图并发送邮件；同时查询社区针对高温天气的措施（knowledge），该查询独立于其他路由。
+2026-06-03 13:48:54,704 - agent - INFO - executor.py:192 - [Supervisor] routes=['weather', 'report', 'knowledge']
+2026-06-03 13:48:54,711 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:7条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:49:05,145 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{}
+2026-06-03 13:49:05,145 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:49:05,145 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:query_weather_forecast
+2026-06-03 13:49:05,145 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 13:49:05,646 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:query_weather_forecast 调用成功
+2026-06-03 13:49:05,647 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "15日天气", "data": "{\\"code\\":0,\\"data\\":{\\"city\\":{\\"cityId\\":2250,\\"counname\\":\\"中国\\",\\"ianatimezone\\":\\"Asia/Shanghai\\",\\"name\\":\\"汉中市\\",\\"pname\\":\\"陕西省\\",\\"secondaryname\\":\\"陕西省\\",\\"timezone\\":\\"8\\"},\\"forecast\\":[{\\"conditionDay\\":\\"阴\\",\\"conditionIdDay\\":\\"2\\",\\"conditionIdNight\\":\\"2\\",\\"conditionNight\\":\\"阴\\",\\"humidity\\":\\"61\\",\\"moonphase\\":\\"WaningGibbous\\",\\"moonrise\\":\\"2026-06-02 21:56:00\\",\\"moonset\\":\\"2026-06-02 06:41:00\\",\\"pop\\":\\"0\\",\\"predictDate\\":\\"2026-06-02\\",\\"qpf\\":\\"0.0\\",\\"sunrise\\":\\"2026-06-02 05:44:00\\",\\"sunset\\":\\"2026-06-02 19:56:00\\",\\"tempDay\\":\\"31\\",\\"tempNight\\":\\"21\\",\\"updatetime\\":\\"2026-06-02 22:00:00\\",\\"uvi\\":\\"8\\",\\"windDegreesDay\\":\\"45\\",\\"windDegreesNight\\":\\"45\\",\\"windDirDay\\":\\"东北风\\",\\"windDirNight\\":\\"东北风\\",\\"windLevelDay\\":\\"2\\",\\"windLevelNight\\":\\"2\\",\\"windSpeedDay\\":\\"2.4\\",\\"windSpeedNight\\":\\"2.4\\"},{\\"conditionDay\\":\\"晴\\",\\"conditionIdDay\\":\\"0\\",\\"conditionIdNight\\":\\"30\\",\\"conditionNight\\":\\"晴\\",\\"humidity\\":\\"68\\",\\"moonphase\\":\\"W ...[truncated,total=12516 chars]
+2026-06-03 13:49:05,650 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:9条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:49:30,774 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:8条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:49:50,957 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{}
+2026-06-03 13:49:50,958 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:49:50,958 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:query_user_order_history
+2026-06-03 13:49:50,958 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 13:49:51,687 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:query_user_order_history 调用成功
+2026-06-03 13:49:51,688 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "用户餐饮订单", "data": [{"id": 93, "startTime": "2026-05-24 15:02:27", "endTime": null, "user": {"id": 1, "name": "张三", "age": 0, "address": null, "phone": null, "gender": null, "regTime": null, "community": null, "password": null, "token": null, "childrenName": null, "childrenPhone": null, "menus": null, "type": null, "communityId": 0, "img": null, "userFace": null, "cityId": 0}, "send": null, "type": null, "amount": 63, "deliveryAddress": "汉中市", "deliveryPhone": "17764777839", "remark": "不要辣椒、不要香菜", "orderStatus": 0, "community": null, "items": [{"id": 1, "community": null, "name": "清蒸鲈鱼", "description": null, "img": null, "price": 28, "foodType": null, "quantity": 1}, {"id": 2, "community": null, "name": "青菜豆腐", "description": null, "img": null, "price": 8, "foodType": null, "quantity": 1}, {"id": 3, "community": null, "name": "冬瓜排骨汤", "description": null, "img": null, "price": 25, "foodType": null, "quantity": 1}, {"id": 7, "community": null, "name": "米饭", "description": null, "img": null, "price": 1, "foodType": null, "quantity": 2}], "purchasesItems": null, "OrderDate": null, "home": null, "orderDate": null}, {"id": 90, "startTime": "2026-05-20 13 ...[truncated,total=53005 chars]
+2026-06-03 13:49:51,693 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:10条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:50:55,027 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'data': [{'time': '2025-06-02', 'value': 31, 'group': '最高气温'}, {'time': '2025-06-03', 'value': 34, 'group': '最高气温'}, {'time': '2025-06-04', 'value': 32, 'group': '最高气温'}, {'time': '2025-06-05', 'value': 34, 'group': '最高气温'}, {'time': '2025-06-06', 'value': 28, 'group': '最高气温'}, {'time': '2025-06-07', 'value': 30, 'group': '最高气温'}, {'time': '2025-06-08', 'value': 32, 'group': '最高气温'}, {'time': '2025-06-09', 'value': 30, 'group': '最高气温'}, {'time': '2025-06-10', 'value': 28, 'group': '最高气温'}, {'time': '2025-06-11', 'value': 30, 'group': '最高气温'}, {'time': '2025-06-12', 'value': 32, 'group': '最高气温'}, {'time': '2025-06-13', 'value': 34, 'group': '最高气温'}, {'time': '2025-06-14', 'value': 33, 'group': '最高气温'}, {'time': '2025-06-15', 'value': 31, 'group': '最高气温'}, {'time': '2025-06-16', 'value': 30, 'group': '最高气温'}, {'time': '2025-06-17', 'value': 32, 'group': '最高气温'}, {'time': '2025-06-02', 'value': 21, 'group': '最低气温'}, {'time': '2025-06-03', 'value': 21, 'group': '最低气温'}, {'time': '2025-06-04', 'value': 21, 'group': '最低气温'}, {'time': '2025-06-05', 'value': 21, 'group': '最低气温'}, {'time': '2025-06-06', 'value': 19, 'group': '最低气温'}, {'time': '2025-06-07', 'value': 19, 'group': '最低气温'}, {'time': '2025-06-08', 'value': 19, 'group': '最低气温'}, {'time': '2025-06-09', 'value': 18, 'group': '最低气温'}, {'time': '2025-06-10', 'value': 17, 'group': '最低气温'}, {'time': '2025-06-11', 'value': 17, 'group': '最低气温'}, {'time': '2025-06-12', 'value': 18, 'group': '最低气温'}, {'time': '2025-06-13', 'value': 19, 'group': '最低气温'}, {'time': '2025-06-14', 'value': 18, 'group': '最低气温'}, {'time': '2025-06-15', 'value': 17, 'group': '最低气温'}, {'time': '2025-06-16', 'value': 17, 'group': '最低气温'}, {'time': '2025-06-17', 'value': 18, 'group': '最低气温'}], 'title': '汉中市未来15天天气预报折线图', 'axisXTitle': '日期', 'axisYTitle': '温度 (°C)', 'width': 800, 'height': 500}
+2026-06-03 13:50:55,029 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:generate_line_chart
+2026-06-03 13:50:55,030 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'data': [{'time': '2025-06-02', 'value': 31, 'group': '最高气温'}, {'time': '2025-06-03', 'value': 34, 'group': '最高气温'}, {'time': '2025-06-04', 'value': 32, 'group': '最高气温'}, {'time': '2025-06-05', 'value': 34, 'group': '最高气温'}, {'time': '2025-06-06', 'value': 28, 'group': '最高气温'}, {'time': '2025-06-07', 'value': 30, 'group': '最高气温'}, {'time': '2025-06-08', 'value': 32, 'group': '最高气温'}, {'time': '2025-06-09', 'value': 30, 'group': '最高气温'}, {'time': '2025-06-10', 'value': 28, 'group': '最高气温'}, {'time': '2025-06-11', 'value': 30, 'group': '最高气温'}, {'time': '2025-06-12', 'value': 32, 'group': '最高气温'}, {'time': '2025-06-13', 'value': 34, 'group': '最高气温'}, {'time': '2025-06-14', 'value': 33, 'group': '最高气温'}, {'time': '2025-06-15', 'value': 31, 'group': '最高气温'}, {'time': '2025-06-16', 'value': 30, 'group': '最高气温'}, {'time': '2025-06-17', 'value': 32, 'group': '最高气温'}, {'time': '2025-06-02', 'value': 21, 'group': '最低气温'}, {'time': '2025-06-03', 'value': 21, 'group': '最低气温'}, {'time': '2025-06-04', 'value': 21, 'group': '最低气温'}, {'time': '2025-06-05', 'value': 21, 'group': '最低气温'}, {'time': '2025-06-06', 'value': 19, 'group': '最低气温'}, {'time': '2025-06-07', 'value': 19, 'group': '最低气温'}, {'time': '2025-06-08', 'value': 19, 'group': '最低气温'}, {'time': '2025-06-09', 'value': 18, 'group': '最低气温'}, {'time': '2025-06-10', 'value': 17, 'group': '最低气温'}, {'time': '2025-06-11', 'value': 17, 'group': '最低气温'}, {'time': '2025-06-12', 'value': 18, 'group': '最低气温'}, {'time': '2025-06-13', 'value': 19, 'group': '最低气温'}, {'time': '2025-06-14', 'value': 18, 'group': '最低气温'}, {'time': '2025-06-15', 'value': 17, 'group': '最低气温'}, {'time': '2025-06-16', 'value': 17, 'group': '最低气温'}, {'time': '2025-06-17', 'value': 18, 'group': '最低气温'}], 'title': '汉中市未来15天天气预报折线图', 'axisXTitle': '日期', 'axisYTitle': '温度 (°C)', 'width': 800, 'height': 500}
+2026-06-03 13:50:58,687 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:generate_line_chart 调用成功
+2026-06-03 13:50:58,688 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content=[{'type': 'text', 'text': 'https://mdn.alipayobjects.com/one_clip/afts/img/sSeoTp7GuFAAAAAATJAAAAgAoEACAQFr/original', 'id': 'lc_12739e01-5fbb-457d-baa0-96b42166df23'}] name='generate_line_chart' tool_call_id='call_b55131eb365f450fb735f628'
+2026-06-03 13:50:58,690 - agent - INFO - worker.py:168 - [MCP图表] worker=generate_line_chart url=https://mdn.alipayobjects.com/one_clip/afts/img/sSeoTp7GuFAAAAAATJAAAAgAoEACAQFr/original
+2026-06-03 13:50:58,691 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:12条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:51:19,862 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'data': [{'time': '2026-05-24', 'value': 63}, {'time': '2026-05-20', 'value': 45}, {'time': '2026-05-20', 'value': 62}, {'time': '2026-05-14', 'value': 22}, {'time': '2026-05-14', 'value': 46}, {'time': '2026-05-14', 'value': 41}, {'time': '2026-05-14', 'value': 30}, {'time': '2026-05-13', 'value': 65}, {'time': '2026-05-13', 'value': 35}, {'time': '2026-05-12', 'value': 69}], 'title': '最近餐饮订单金额趋势折线图', 'axisXTitle': '订单日期', 'axisYTitle': '订单金额 (元)', 'width': 800, 'height': 500}
+2026-06-03 13:51:19,862 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:generate_line_chart
+2026-06-03 13:51:19,862 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'data': [{'time': '2026-05-24', 'value': 63}, {'time': '2026-05-20', 'value': 45}, {'time': '2026-05-20', 'value': 62}, {'time': '2026-05-14', 'value': 22}, {'time': '2026-05-14', 'value': 46}, {'time': '2026-05-14', 'value': 41}, {'time': '2026-05-14', 'value': 30}, {'time': '2026-05-13', 'value': 65}, {'time': '2026-05-13', 'value': 35}, {'time': '2026-05-12', 'value': 69}], 'title': '最近餐饮订单金额趋势折线图', 'axisXTitle': '订单日期', 'axisYTitle': '订单金额 (元)', 'width': 800, 'height': 500}
+2026-06-03 13:51:22,479 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:generate_line_chart 调用成功
+2026-06-03 13:51:22,480 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content=[{'type': 'text', 'text': 'https://mdn.alipayobjects.com/one_clip/afts/img/euNNRaLiMh0AAAAAScAAAAgAoEACAQFr/original', 'id': 'lc_b3120adc-3afd-4cc2-8707-b37d142241b2'}] name='generate_line_chart' tool_call_id='call_c202b55a47774808865374a7'
+2026-06-03 13:51:22,485 - agent - INFO - worker.py:168 - [MCP图表] worker=generate_line_chart url=https://mdn.alipayobjects.com/one_clip/afts/img/euNNRaLiMh0AAAAAScAAAAgAoEACAQFr/original
+2026-06-03 13:51:22,487 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:14条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:51:30,009 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'email': '2087376402@qq.com'}
+2026-06-03 13:51:30,010 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 13:51:30,010 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:save_user_email_to_memory
+2026-06-03 13:51:30,010 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'email': '2087376402@qq.com', 'user_id': 1, 'community_id': 1}
+2026-06-03 13:51:30,015 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:save_user_email_to_memory 调用成功
+2026-06-03 13:51:30,015 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "邮箱已存在", "data": {"saved": false, "reason": "邮箱已存在", "email": "2087376402@qq.com"}}' name='save_user_email_to_memory' tool_call_id='call_a16e75c9e0a843a6ac8d5a66'
+2026-06-03 13:51:30,019 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:16条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:51:39,233 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/sSeoTp7GuFAAAAAATJAAAAgAoEACAQFr/original', 'agent_message': '这是汉中市未来15天的天气预报折线图，展示了最高气温和最低气温的变化趋势。从图中可以看出，未来几天最高气温在25-34°C之间波动，6月3日和5日最高可达34°C；最低气温在16-22°C之间。请注意防暑降温。', 'subject': '汉中市天气预报折线图', 'chart_title': '汉中市未来15天天气预报折线图', 'to_email': '2087376402@qq.com'}
+2026-06-03 13:51:39,233 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:51:39,233 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 13:51:39,233 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:send_agent_chart_email
+2026-06-03 13:51:39,233 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/sSeoTp7GuFAAAAAATJAAAAgAoEACAQFr/original', 'agent_message': '这是汉中市未来15天的天气预报折线图，展示了最高气温和最低气温的变化趋势。从图中可以看出，未来几天最高气温在25-34°C之间波动，6月3日和5日最高可达34°C；最低气温在16-22°C之间。请注意防暑降温。', 'subject': '汉中市天气预报折线图', 'chart_title': '汉中市未来15天天气预报折线图', 'to_email': '2087376402@qq.com', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8', 'user_id': 1, 'community_id': 1}
+2026-06-03 13:51:41,244 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:send_agent_chart_email 调用成功
+2026-06-03 13:51:41,244 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "图表分析结果已发送到用户邮箱", "data": {"toEmail": "2087376402@qq.com", "subject": "汉中市天气预报折线图", "chartTitle": "汉中市未来15天天气预报折线图", "status": "SENT"}}' name='send_agent_chart_email' tool_call_id='call_d4430946640540a4b0ee9434'
+2026-06-03 13:51:41,248 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:18条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:51:52,599 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/euNNRaLiMh0AAAAAScAAAAgAoEACAQFr/original', 'agent_message': '这是您最近的餐饮订单金额趋势折线图，展示了最近10个订单的金额变化。从图中可以看出，订单金额在22元到69元之间波动，您最近的订单集中在5月中旬。感谢您使用社区餐饮服务！', 'subject': '最近餐饮订单金额趋势折线图', 'chart_title': '最近餐饮订单金额趋势折线图', 'to_email': '2087376402@qq.com', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8', 'user_id': '1', 'community_id': '1'}
+2026-06-03 13:51:52,599 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:51:52,599 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 13:51:52,599 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:send_agent_chart_email
+2026-06-03 13:51:52,599 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/euNNRaLiMh0AAAAAScAAAAgAoEACAQFr/original', 'agent_message': '这是您最近的餐饮订单金额趋势折线图，展示了最近10个订单的金额变化。从图中可以看出，订单金额在22元到69元之间波动，您最近的订单集中在5月中旬。感谢您使用社区餐饮服务！', 'subject': '最近餐饮订单金额趋势折线图', 'chart_title': '最近餐饮订单金额趋势折线图', 'to_email': '2087376402@qq.com', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8', 'user_id': 1, 'community_id': 1}
+2026-06-03 13:51:54,527 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:send_agent_chart_email 调用成功
+2026-06-03 13:51:54,528 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "图表分析结果已发送到用户邮箱", "data": {"toEmail": "2087376402@qq.com", "subject": "最近餐饮订单金额趋势折线图", "chartTitle": "最近餐饮订单金额趋势折线图", "status": "SENT"}}' name='send_agent_chart_email' tool_call_id='call_8542b698a3f441998a770a1b'
+2026-06-03 13:51:54,532 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:20条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:52:07,788 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:8条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:52:19,113 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'query': '社区针对高温天气采取了哪些措施'}
+2026-06-03 13:52:19,113 - agent - INFO - middleware.py:86 - [tool monitor]为 rag_summarize 注入 max_doc_chars=500
+2026-06-03 13:52:19,113 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:rag_summarize
+2026-06-03 13:52:19,114 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'query': '社区针对高温天气采取了哪些措施', 'max_doc_chars': 500}
+2026-06-03 13:52:19,872 - agent - INFO - hybrid_retriever.py:150 - [RAG][BM25] query=社区针对高温天气采取了哪些措施 terms=['天气', '措施', '社区', '采取', '针对', '高温', '了'] recall_docs=10
+2026-06-03 13:52:19,873 - agent - INFO - hybrid_retriever.py:222 - [RAG][Hybrid] dense=10 bm25=10 fused=19 final=10
+2026-06-03 13:52:19,873 - agent - INFO - rag_service.py:62 - [RAG] query=社区针对高温天气采取了哪些措施 混合粗召回文档数=10
+2026-06-03 13:52:20,542 - agent - INFO - reranker.py:82 - [RAG][Rerank] 通义重排成功 model=gte-rerank-v2 input_docs=10 output_docs=3
+2026-06-03 13:52:20,543 - agent - INFO - rag_service.py:68 - [RAG] query=社区针对高温天气采取了哪些措施 rerank后文档数=3
+2026-06-03 13:52:35,383 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:rag_summarize 调用成功
+2026-06-03 13:52:35,383 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='根据参考资料，社区在夏季高温期间会将该时段视为火灾事故高发时段，并重点加强消防安全管理，以保障居民生命财产安全。' name='rag_summarize' tool_call_id='call_ef93c17ae6a8440891cf7341'
+2026-06-03 13:52:35,386 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:10条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:52:40,210 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'query': '夏季高温天气社区防暑措施', 'max_doc_chars': '500'}
+2026-06-03 13:52:40,210 - agent - INFO - middleware.py:86 - [tool monitor]为 rag_summarize 注入 max_doc_chars=500
+2026-06-03 13:52:40,210 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:rag_summarize
+2026-06-03 13:52:40,210 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'query': '夏季高温天气社区防暑措施', 'max_doc_chars': 500}
+2026-06-03 13:52:41,012 - agent - INFO - hybrid_retriever.py:150 - [RAG][BM25] query=夏季高温天气社区防暑措施 terms=['夏季', '天气', '措施', '社区', '防暑', '高温'] recall_docs=10
+2026-06-03 13:52:41,013 - agent - INFO - hybrid_retriever.py:222 - [RAG][Hybrid] dense=10 bm25=10 fused=19 final=10
+2026-06-03 13:52:41,013 - agent - INFO - rag_service.py:62 - [RAG] query=夏季高温天气社区防暑措施 混合粗召回文档数=10
+2026-06-03 13:52:41,667 - agent - INFO - reranker.py:82 - [RAG][Rerank] 通义重排成功 model=gte-rerank-v2 input_docs=10 output_docs=3
+2026-06-03 13:52:41,667 - agent - INFO - rag_service.py:68 - [RAG] query=夏季高温天气社区防暑措施 rerank后文档数=3
+2026-06-03 13:53:02,623 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:rag_summarize 调用成功
+2026-06-03 13:53:02,623 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='社区在夏季高温天气期间储备沙袋、水泵、应急照明和简易救援物资，物业根据气象预警加强巡查，居民应关注官方天气信息和社区通知，不传播未经证实的消息。各楼栋网格员会通过入户提醒、电话沟通或线上告知居民，具体防汛值班、物资调配和疏散安排以社区实时通知为准。' name='rag_summarize' tool_call_id='call_062e6c31ae144b02a65c3d9a'
+2026-06-03 13:53:02,627 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:12条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:54:25,443 - agent - INFO - executor.py:311 - [Reflector] passed=False should_retry=True attempt=0 issues=['Worker 初稿中明确表示‘无法直接生成折线图或发送邮件’和‘没有查询餐饮订单数据的工具’，这与工具调用结果（generate_line_chart 返回图表链接、send_agent_chart_email 成功发送、query_user_order_history 返回订单数据）直接冲突。', '初稿在‘图表生成与邮件发送’部分声称已生成并发送图表，但之前又否认能力，导致表述矛盾，可能误导用户。', '对于社区高温天气措施，Worker 列出了一般社区常见措施，但实际调用 rag_summarize 工具返回了基于社区知识库的具体措施（如加强消防安全管理、储备防汛物资等），初稿未充分利用工具结果。', '初稿结构混乱，前后不一致，影响回答的可靠性和用户体验。']
+2026-06-03 13:55:13,543 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['weather', 'report', 'knowledge'] reason=用户需要天气数据生成折线图，由 report 处理图表生成和发送邮件，并查询社区措施（knowledge 独立处理）
+2026-06-03 13:55:13,544 - agent - INFO - executor.py:192 - [Supervisor] routes=['weather', 'report', 'knowledge']
+2026-06-03 13:55:13,550 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:8条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:55:23,651 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{}
+2026-06-03 13:55:23,651 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:generate_line_chart
+2026-06-03 13:55:23,651 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{}
+2026-06-03 13:55:23,652 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:generate_line_chart 调用成功
+2026-06-03 13:55:23,652 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='Error: generate_line_chart is not a valid tool, try one of [query_weather_forecast].' name='generate_line_chart' tool_call_id='call_1aecd9902ee64f20b142e3ef' status='error'
+2026-06-03 13:55:23,655 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:10条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:55:32,694 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{}
+2026-06-03 13:55:32,694 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 13:55:32,694 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:query_weather_forecast
+2026-06-03 13:55:32,694 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 13:55:33,150 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:query_weather_forecast 调用成功
+2026-06-03 13:55:33,150 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "15日天气", "data": "{\\"code\\":0,\\"data\\":{\\"city\\":{\\"cityId\\":2250,\\"counname\\":\\"中国\\",\\"ianatimezone\\":\\"Asia/Shanghai\\",\\"name\\":\\"汉中市\\",\\"pname\\":\\"陕西省\\",\\"secondaryname\\":\\"陕西省\\",\\"timezone\\":\\"8\\"},\\"forecast\\":[{\\"conditionDay\\":\\"阴\\",\\"conditionIdDay\\":\\"2\\",\\"conditionIdNight\\":\\"2\\",\\"conditionNight\\":\\"阴\\",\\"humidity\\":\\"61\\",\\"moonphase\\":\\"WaningGibbous\\",\\"moonrise\\":\\"2026-06-02 21:56:00\\",\\"moonset\\":\\"2026-06-02 06:41:00\\",\\"pop\\":\\"0\\",\\"predictDate\\":\\"2026-06-02\\",\\"qpf\\":\\"0.0\\",\\"sunrise\\":\\"2026-06-02 05:44:00\\",\\"sunset\\":\\"2026-06-02 19:56:00\\",\\"tempDay\\":\\"31\\",\\"tempNight\\":\\"21\\",\\"updatetime\\":\\"2026-06-02 22:00:00\\",\\"uvi\\":\\"8\\",\\"windDegreesDay\\":\\"45\\",\\"windDegreesNight\\":\\"45\\",\\"windDirDay\\":\\"东北风\\",\\"windDirNight\\":\\"东北风\\",\\"windLevelDay\\":\\"2\\",\\"windLevelNight\\":\\"2\\",\\"windSpeedDay\\":\\"2.4\\",\\"windSpeedNight\\":\\"2.4\\"},{\\"conditionDay\\":\\"晴\\",\\"conditionIdDay\\":\\"0\\",\\"conditionIdNight\\":\\"30\\",\\"conditionNight\\":\\"晴\\",\\"humidity\\":\\"68\\",\\"moonphase\\":\\"W ...[truncated,total=12516 chars]
+2026-06-03 13:55:33,153 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:12条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:55:46,279 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:8条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:56:05,191 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:8条消息 last_role=human last_has_tool_calls=False
+2026-06-03 13:56:12,565 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'query': '社区针对高温天气采取哪些措施'}
+2026-06-03 13:56:12,565 - agent - INFO - middleware.py:86 - [tool monitor]为 rag_summarize 注入 max_doc_chars=500
+2026-06-03 13:56:12,565 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:rag_summarize
+2026-06-03 13:56:12,566 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'query': '社区针对高温天气采取哪些措施', 'max_doc_chars': 500}
+2026-06-03 13:56:13,330 - agent - INFO - hybrid_retriever.py:150 - [RAG][BM25] query=社区针对高温天气采取哪些措施 terms=['天气', '措施', '社区', '采取', '针对', '高温'] recall_docs=10
+2026-06-03 13:56:13,331 - agent - INFO - hybrid_retriever.py:222 - [RAG][Hybrid] dense=10 bm25=10 fused=19 final=10
+2026-06-03 13:56:13,331 - agent - INFO - rag_service.py:62 - [RAG] query=社区针对高温天气采取哪些措施 混合粗召回文档数=10
+2026-06-03 13:56:14,029 - agent - INFO - reranker.py:82 - [RAG][Rerank] 通义重排成功 model=gte-rerank-v2 input_docs=10 output_docs=3
+2026-06-03 13:56:14,029 - agent - INFO - rag_service.py:68 - [RAG] query=社区针对高温天气采取哪些措施 rerank后文档数=3
+2026-06-03 13:56:34,496 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:rag_summarize 调用成功
+2026-06-03 13:56:34,497 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='社区在高温天气期间，提醒注意消防安全，并重申消防安全管理要求。' name='rag_summarize' tool_call_id='call_8129f4267aef446f8a133c58'
+2026-06-03 13:56:34,499 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:10条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 13:57:37,262 - agent - INFO - executor.py:311 - [Reflector] passed=False should_retry=True attempt=1 issues=["用户姓名不匹配：初稿称'曹先生'，但订单历史查询结果中用户名称为'张三'，属于明显事实错误。"]
+2026-06-03 13:58:03,294 - agent - INFO - executor.py:359 - [UserMemory] update_result={'saved': False, 'reason': '用户输入为当前任务请求（生成图表并发送到已有邮箱、查询社区措施），属于临时操作，未提供新的长期偏好或信息。'}
+2026-06-03 14:05:58,990 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 14:06:01,956 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 17:15:58,466 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 17:16:01,799 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 17:21:51,584 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 17:21:54,675 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 17:22:48,810 - agent - INFO - executor.py:65 - [MultiAgent] query=帮我整理一下最近的天气信息，然后发送到我的邮箱中
+2026-06-03 17:23:10,024 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['weather', 'report'] reason=用户要求查询天气信息并发送邮件，涉及天气和发送邮件功能；根据规则，weather 必须排在 report 之前以提供数据，由 report 处理整理和发送邮件。
+2026-06-03 17:23:10,024 - agent - INFO - executor.py:193 - [Supervisor] routes=['weather', 'report'] retry_attempt=0
+2026-06-03 17:23:10,029 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:7条消息 last_role=human last_has_tool_calls=False
+2026-06-03 17:23:20,056 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{}
+2026-06-03 17:23:20,056 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 17:23:20,056 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:query_weather_forecast
+2026-06-03 17:23:20,057 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 17:23:20,467 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:query_weather_forecast 调用成功
+2026-06-03 17:23:20,467 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "15日天气", "data": "{\\"code\\":0,\\"data\\":{\\"city\\":{\\"cityId\\":2250,\\"counname\\":\\"中国\\",\\"ianatimezone\\":\\"Asia/Shanghai\\",\\"name\\":\\"汉中市\\",\\"pname\\":\\"陕西省\\",\\"secondaryname\\":\\"陕西省\\",\\"timezone\\":\\"8\\"},\\"forecast\\":[{\\"conditionDay\\":\\"阴\\",\\"conditionIdDay\\":\\"2\\",\\"conditionIdNight\\":\\"2\\",\\"conditionNight\\":\\"阴\\",\\"humidity\\":\\"61\\",\\"moonphase\\":\\"WaningGibbous\\",\\"moonrise\\":\\"2026-06-02 21:56:00\\",\\"moonset\\":\\"2026-06-02 06:41:00\\",\\"pop\\":\\"0\\",\\"predictDate\\":\\"2026-06-02\\",\\"qpf\\":\\"0.0\\",\\"sunrise\\":\\"2026-06-02 05:44:00\\",\\"sunset\\":\\"2026-06-02 19:56:00\\",\\"tempDay\\":\\"31\\",\\"tempNight\\":\\"21\\",\\"updatetime\\":\\"2026-06-02 22:00:00\\",\\"uvi\\":\\"8\\",\\"windDegreesDay\\":\\"45\\",\\"windDegreesNight\\":\\"45\\",\\"windDirDay\\":\\"东北风\\",\\"windDirNight\\":\\"东北风\\",\\"windLevelDay\\":\\"2\\",\\"windLevelNight\\":\\"2\\",\\"windSpeedDay\\":\\"2.4\\",\\"windSpeedNight\\":\\"2.4\\"},{\\"conditionDay\\":\\"晴\\",\\"conditionIdDay\\":\\"0\\",\\"conditionIdNight\\":\\"30\\",\\"conditionNight\\":\\"晴\\",\\"humidity\\":\\"62\\",\\"moonphase\\":\\"W ...[truncated,total=12516 chars]
+2026-06-03 17:23:20,470 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:9条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 17:23:47,871 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:8条消息 last_role=human last_has_tool_calls=False
+2026-06-03 17:24:21,238 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'agent_message': '【汉中市未来15天天气概况】（2026年6月2日至6月17日）\n\n总体趋势：以多云、阴天为主，气温较高，最高温在31-34°C之间，最低温16-22°C。近期有两次降雨过程，需注意防范。\n\n详细天气：\n- 6月2日（今天）：阴，21-31°C，东北风2级。\n- 6月3日：晴，21-34°C，东北风2级，紫外线较强。\n- 6月4日：多云转阴，21-32°C，东北风2级。\n- 6月5日：多云，21-34°C，南风3级，风力稍大。\n- 6月6日：多云转小雨，19-28°C，降雨概率高达80%，请备好雨具。\n- 6月7日：小雨转阴，19-30°C，降雨概率60%。\n- 6月8日：阴，16-25°C，气温下降明显。\n- 6月9日-6月17日：以阴天和多云为主，气温在17-34°C之间波动，无明显降雨。\n\n关键提醒：\n1. 防晒补水：近期最高气温多在30°C以上，外出请注意防晒，及时补充水分。\n2. 降雨防范：6月6日晚至7日白天有明显降雨，出行请携带雨具，注意交通安全。\n3. 气温波动：6月8日气温较低，早晚温差较大，请注意适时增减衣物。\n\n（本邮件由社区助手整理发送）', 'subject': '汉中市未来15天天气预报提醒', 'user_email_from_message': '2087376402@qq.com'}
+2026-06-03 17:24:21,238 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 17:24:21,238 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 17:24:21,238 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:send_agent_text_email
+2026-06-03 17:24:21,238 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'agent_message': '【汉中市未来15天天气概况】（2026年6月2日至6月17日）\n\n总体趋势：以多云、阴天为主，气温较高，最高温在31-34°C之间，最低温16-22°C。近期有两次降雨过程，需注意防范。\n\n详细天气：\n- 6月2日（今天）：阴，21-31°C，东北风2级。\n- 6月3日：晴，21-34°C，东北风2级，紫外线较强。\n- 6月4日：多云转阴，21-32°C，东北风2级。\n- 6月5日：多云，21-34°C，南风3级，风力稍大。\n- 6月6日：多云转小雨，19-28°C，降雨概率高达80%，请备好雨具。\n- 6月7日：小雨转阴，19-30°C，降雨概率60%。\n- 6月8日：阴，16-25°C，气温下降明显。\n- 6月9日-6月17日：以阴天和多云为主，气温在17-34°C之间波动，无明显降雨。\n\n关键提醒：\n1. 防晒补水：近期最高气温多在30°C以上，外出请注意防晒，及时补充水分。\n2. 降雨防范：6月6日晚至7日白天有明显降雨，出行请携带雨具，注意交通安全。\n3. 气温波动：6月8日气温较低，早晚温差较大，请注意适时增减衣物。\n\n（本邮件由社区助手整理发送）', 'subject': '汉中市未来15天天气预报提醒', 'user_email_from_message': '2087376402@qq.com', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8', 'user_id': 1, 'community_id': 1}
+2026-06-03 17:24:23,385 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:send_agent_text_email 调用成功
+2026-06-03 17:24:23,385 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "邮件已发送到用户邮箱", "data": {"toEmail": "2087376402@qq.com", "subject": "汉中市未来15天天气预报提醒", "status": "SENT"}}' name='send_agent_text_email' tool_call_id='call_23efd1b68ed5445bb1bdbaba'
+2026-06-03 17:24:23,388 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:10条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 17:25:31,009 - agent - INFO - executor.py:312 - [Reflector] passed=True should_retry=False attempt=0 issues=[]
+2026-06-03 17:25:57,815 - agent - INFO - executor.py:368 - [UserMemory] update_result={'saved': False, 'reason': '用户输入是当前一次任务请求（整理天气信息并发送邮件），没有提供新的长期记忆信息，如个人身份、偏好更新或新联系方式。'}
+2026-06-03 17:28:38,010 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 17:28:40,812 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 17:45:02,664 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 17:45:05,632 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 18:01:08,575 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 18:01:11,267 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 18:27:18,226 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 18:27:21,123 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 18:28:01,334 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 18:28:04,779 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 18:35:28,611 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 18:35:34,181 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 18:35:35,980 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 18:49:41,960 - agent - INFO - executor.py:44 - [MultiAgent] query=整理我一个月内的订单数据，生成折线图，发送到我的邮箱
+2026-06-03 18:49:56,591 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['report'] reason=用户要求整理历史订单数据、生成折线图并发送邮件，这涉及数据分析和可视化，符合 report 路由的职责（图表生成、数据统计、邮件发送）
+2026-06-03 18:49:56,592 - agent - INFO - executor.py:113 - [Supervisor] routes=['report'] retry_attempt=0
+2026-06-03 18:49:56,596 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:9条消息 last_role=human last_has_tool_calls=False
+2026-06-03 18:50:03,755 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{}
+2026-06-03 18:50:03,755 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 18:50:03,755 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:query_user_order_history
+2026-06-03 18:50:03,755 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 18:50:04,402 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:query_user_order_history 调用成功
+2026-06-03 18:50:04,403 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "用户餐饮订单", "data": [{"id": 93, "startTime": "2026-05-24 15:02:27", "endTime": null, "user": {"id": 1, "name": "张三", "age": 0, "address": null, "phone": null, "gender": null, "regTime": null, "community": null, "password": null, "token": null, "childrenName": null, "childrenPhone": null, "menus": null, "type": null, "communityId": 0, "img": null, "userFace": null, "cityId": 0}, "send": null, "type": null, "amount": 63, "deliveryAddress": "汉中市", "deliveryPhone": "17764777839", "remark": "不要辣椒、不要香菜", "orderStatus": 0, "community": null, "items": [{"id": 1, "community": null, "name": "清蒸鲈鱼", "description": null, "img": null, "price": 28, "foodType": null, "quantity": 1}, {"id": 2, "community": null, "name": "青菜豆腐", "description": null, "img": null, "price": 8, "foodType": null, "quantity": 1}, {"id": 3, "community": null, "name": "冬瓜排骨汤", "description": null, "img": null, "price": 25, "foodType": null, "quantity": 1}, {"id": 7, "community": null, "name": "米饭", "description": null, "img": null, "price": 1, "foodType": null, "quantity": 2}], "purchasesItems": null, "OrderDate": null, "home": null, "orderDate": null}, {"id": 90, "startTime": "2026-05-20 13 ...[truncated,total=53005 chars]
+2026-06-03 18:50:04,407 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:11条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 18:51:04,095 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'data': [{'time': '2026-05-12', 'value': 246}, {'time': '2026-05-13', 'value': 100}, {'time': '2026-05-14', 'value': 139}, {'time': '2026-05-20', 'value': 107}, {'time': '2026-05-24', 'value': 63}], 'title': '最近一个月订单金额趋势', 'axisXTitle': '日期', 'axisYTitle': '金额（元）', 'width': 600, 'height': 400, 'theme': 'default'}
+2026-06-03 18:51:04,095 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:generate_line_chart
+2026-06-03 18:51:04,095 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'data': [{'time': '2026-05-12', 'value': 246}, {'time': '2026-05-13', 'value': 100}, {'time': '2026-05-14', 'value': 139}, {'time': '2026-05-20', 'value': 107}, {'time': '2026-05-24', 'value': 63}], 'title': '最近一个月订单金额趋势', 'axisXTitle': '日期', 'axisYTitle': '金额（元）', 'width': 600, 'height': 400, 'theme': 'default'}
+2026-06-03 18:51:07,174 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:generate_line_chart 调用成功
+2026-06-03 18:51:07,174 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content=[{'type': 'text', 'text': 'https://mdn.alipayobjects.com/one_clip/afts/img/qqjmS4VTu8YAAAAARmAAAAgAoEACAQFr/original', 'id': 'lc_a0e337d0-e6ed-49d9-b975-71b970ae8979'}] name='generate_line_chart' tool_call_id='call_d86124c9d2f5433482528848'
+2026-06-03 18:51:07,176 - agent - INFO - worker.py:168 - [MCP图表] worker=generate_line_chart url=https://mdn.alipayobjects.com/one_clip/afts/img/qqjmS4VTu8YAAAAARmAAAAgAoEACAQFr/original
+2026-06-03 18:51:07,177 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:13条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 18:51:14,912 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/qqjmS4VTu8YAAAAARmAAAAgAoEACAQFr/original', 'agent_message': '这是您最近一个月（2026年5月）的餐饮订单金额趋势图。从数据可以看出：\n1. 5月12日订单金额最高，达到246元\n2. 5月13日订单金额下降至100元\n3. 5月14日回升至139元\n4. 5月20日和24日订单金额分别为107元和63元，呈现下降趋势\n\n整体来看，近期订单金额有波动但呈下降趋势，建议关注消费习惯变化。', 'subject': '最近一个月订单金额趋势分析', 'chart_title': '最近一个月订单金额趋势', 'user_email_from_message': '2087376402@qq.com'}
+2026-06-03 18:51:14,912 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 18:51:14,912 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 18:51:14,913 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:send_agent_chart_email
+2026-06-03 18:51:14,913 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/qqjmS4VTu8YAAAAARmAAAAgAoEACAQFr/original', 'agent_message': '这是您最近一个月（2026年5月）的餐饮订单金额趋势图。从数据可以看出：\n1. 5月12日订单金额最高，达到246元\n2. 5月13日订单金额下降至100元\n3. 5月14日回升至139元\n4. 5月20日和24日订单金额分别为107元和63元，呈现下降趋势\n\n整体来看，近期订单金额有波动但呈下降趋势，建议关注消费习惯变化。', 'subject': '最近一个月订单金额趋势分析', 'chart_title': '最近一个月订单金额趋势', 'user_email_from_message': '2087376402@qq.com', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8', 'user_id': 1, 'community_id': 1}
+2026-06-03 18:51:16,906 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:send_agent_chart_email 调用成功
+2026-06-03 18:51:16,907 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "图表分析结果已发送到用户邮箱", "data": {"toEmail": "2087376402@qq.com", "subject": "最近一个月订单金额趋势分析", "chartTitle": "最近一个月订单金额趋势", "status": "SENT"}}' name='send_agent_chart_email' tool_call_id='call_2c9b068e41864e0e835ab8f0'
+2026-06-03 18:51:16,910 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:15条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 18:52:05,723 - agent - INFO - executor.py:210 - [Reflector] passed=False should_retry=True attempt=0 issues=['虚构5月12日订单金额最高为246元，实际工具结果中5月12日订单最高金额为69元（订单ID 81）', '虚构5月13日订单金额为100元，实际工具结果中5月13日订单金额为65元和35元，无100元', '虚构5月14日订单金额为139元，实际工具结果中5月14日订单金额为22元、46元、41元和30元，无139元', '错误声称5月24日订单金额63元为近期最低，实际工具结果中最低金额为22元（订单ID 87，5月14日）']
+2026-06-03 18:52:30,773 - agent - INFO - supervisor.py:61 - [Supervisor] routes=['report'] reason=用户需要整理一个月内的订单数据、生成折线图并发送邮件，这些操作都属于图表生成、数据分析和发送邮件范畴，必须路由到 report 子 Agent 处理。
+2026-06-03 18:52:30,773 - agent - INFO - executor.py:113 - [Supervisor] routes=['report'] retry_attempt=1
+2026-06-03 18:52:30,784 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:10条消息 last_role=human last_has_tool_calls=False
+2026-06-03 18:53:24,430 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'data': [{'time': '05-12', 'value': 246}, {'time': '05-13', 'value': 100}, {'time': '05-14', 'value': 139}, {'time': '05-20', 'value': 107}, {'time': '05-24', 'value': 63}], 'title': '最近一个月订单金额趋势（按日汇总）', 'axisXTitle': '日期', 'axisYTitle': '订单总金额（元）', 'width': 800, 'height': 500}
+2026-06-03 18:53:24,430 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:generate_line_chart
+2026-06-03 18:53:24,431 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'data': [{'time': '05-12', 'value': 246}, {'time': '05-13', 'value': 100}, {'time': '05-14', 'value': 139}, {'time': '05-20', 'value': 107}, {'time': '05-24', 'value': 63}], 'title': '最近一个月订单金额趋势（按日汇总）', 'axisXTitle': '日期', 'axisYTitle': '订单总金额（元）', 'width': 800, 'height': 500}
+2026-06-03 18:53:26,917 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:generate_line_chart 调用成功
+2026-06-03 18:53:26,917 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content=[{'type': 'text', 'text': 'https://mdn.alipayobjects.com/one_clip/afts/img/oMOtSok9oOQAAAAAR3AAAAgAoEACAQFr/original', 'id': 'lc_405253e2-ff07-443f-80a0-bbc11c176a70'}] name='generate_line_chart' tool_call_id='call_8f3d5ecea60445a2be4e0c01'
+2026-06-03 18:53:26,919 - agent - INFO - worker.py:168 - [MCP图表] worker=generate_line_chart url=https://mdn.alipayobjects.com/one_clip/afts/img/oMOtSok9oOQAAAAAR3AAAAgAoEACAQFr/original
+2026-06-03 18:53:26,920 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:12条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 18:53:31,005 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'email': '2087376402@qq.com'}
+2026-06-03 18:53:31,005 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 18:53:31,005 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:save_user_email_to_memory
+2026-06-03 18:53:31,005 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'email': '2087376402@qq.com', 'user_id': 1, 'community_id': 1}
+2026-06-03 18:53:31,007 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:save_user_email_to_memory 调用成功
+2026-06-03 18:53:31,007 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "邮箱已存在", "data": {"saved": false, "reason": "邮箱已存在", "email": "2087376402@qq.com"}}' name='save_user_email_to_memory' tool_call_id='call_ca3796e423b24f4282ad9796'
+2026-06-03 18:53:31,010 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:14条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 18:53:44,610 - agent - INFO - middleware.py:57 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/oMOtSok9oOQAAAAAR3AAAAgAoEACAQFr/original', 'agent_message': '根据您最近一个月的订单数据（2026年5月12日至5月24日），为您生成了每日订单总金额趋势折线图。以下是关键数据分析：\n\n**趋势总结：**\n- **5月12日**：当日订单总金额最高，达246元，共4笔订单。\n- **5月13日**：总金额降至100元（2笔订单）。\n- **5月14日**：总金额回升至139元（4笔订单），但单笔最低金额仅22元。\n- **5月20日**：总金额107元（2笔订单）。\n- **5月24日**：总金额降至近期最低的63元（1笔订单）。\n\n**整体观察：**\n订单金额在月初较高，随后呈现波动下降趋势。近期消费频率和金额有所降低。您的餐饮偏好以清蒸鲈鱼、青菜豆腐、冬瓜排骨汤等清淡菜品为主，备注中多次要求“不要辣椒、不要香菜”。\n\n图表已作为附件发送，供您参考。', 'subject': '最近一个月订单金额趋势分析（修正版）', 'chart_title': '最近一个月订单金额趋势（按日汇总）', 'to_email': '2087376402@qq.com', 'user_email_from_message': '2087376402@qq.com', 'user_id': '1', 'community_id': '1'}
+2026-06-03 18:53:44,611 - agent - INFO - middleware.py:65 - [tool monitor]已注入 token
+2026-06-03 18:53:44,611 - agent - INFO - middleware.py:74 - [tool monitor]已注入 user_id/community_id
+2026-06-03 18:53:44,611 - agent - INFO - middleware.py:90 - [tool monitor]执行工具:send_agent_chart_email
+2026-06-03 18:53:44,611 - agent - INFO - middleware.py:91 - [tool monitor]传入参数:{'chart_url': 'https://mdn.alipayobjects.com/one_clip/afts/img/oMOtSok9oOQAAAAAR3AAAAgAoEACAQFr/original', 'agent_message': '根据您最近一个月的订单数据（2026年5月12日至5月24日），为您生成了每日订单总金额趋势折线图。以下是关键数据分析：\n\n**趋势总结：**\n- **5月12日**：当日订单总金额最高，达246元，共4笔订单。\n- **5月13日**：总金额降至100元（2笔订单）。\n- **5月14日**：总金额回升至139元（4笔订单），但单笔最低金额仅22元。\n- **5月20日**：总金额107元（2笔订单）。\n- **5月24日**：总金额降至近期最低的63元（1笔订单）。\n\n**整体观察：**\n订单金额在月初较高，随后呈现波动下降趋势。近期消费频率和金额有所降低。您的餐饮偏好以清蒸鲈鱼、青菜豆腐、冬瓜排骨汤等清淡菜品为主，备注中多次要求“不要辣椒、不要香菜”。\n\n图表已作为附件发送，供您参考。', 'subject': '最近一个月订单金额趋势分析（修正版）', 'chart_title': '最近一个月订单金额趋势（按日汇总）', 'to_email': '2087376402@qq.com', 'user_email_from_message': '2087376402@qq.com', 'user_id': 1, 'community_id': 1, 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyZXNzIjoi5rGJ5Lit5biCIiwicGhvbmUiOiIxNzc2NDc3NzgzOSIsImlkIjoxLCJjb21tdW5pdHlJZCI6MSwiZXhwIjoxNzgwNTQ5MjYxfQ.iiG6dPJECml3ehSMwOrmeYlkZcTUWLDcUtN-GoX0bL8'}
+2026-06-03 18:53:46,422 - agent - INFO - middleware.py:94 - [tool monitor]执行工具:send_agent_chart_email 调用成功
+2026-06-03 18:53:46,422 - agent - INFO - middleware.py:95 - [tool monitor]工具结果预览:content='{"code": 200, "message": "图表分析结果已发送到用户邮箱", "data": {"toEmail": "2087376402@qq.com", "subject": "最近一个月订单金额趋势分析（修正版）", "chartTitle": "最近一个月订单金额趋势（按日汇总）", "status": "SENT"}}' name='send_agent_chart_email' tool_call_id='call_3c372d6e3fb5485099a46139'
+2026-06-03 18:53:46,426 - agent - INFO - middleware.py:127 - [log_before_model]即将调用模型，带有:16条消息 last_role=tool last_has_tool_calls=False
+2026-06-03 18:54:49,670 - agent - INFO - executor.py:210 - [Reflector] passed=True should_retry=False attempt=1 issues=[]
+2026-06-03 18:55:14,961 - agent - INFO - executor.py:261 - [UserMemory] update_result={'saved': False, 'reason': '用户输入为当前任务请求（整理订单数据、生成折线图并发送到邮箱），不包含新的长期记忆信息，且规则规定类似生成图表的任务应保存为false'}
+2026-06-03 18:57:10,433 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 18:57:12,225 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 20:27:07,225 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 20:27:10,268 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 20:32:01,603 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 20:32:03,376 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 20:37:41,421 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 20:37:44,356 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 20:42:03,942 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 20:42:05,608 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25
+2026-06-03 20:43:01,129 - agent - INFO - mcp_tool_loader.py:177 - [MCP] 当前线程已有运行中的事件循环，切换到独立线程加载 MCP 工具
+2026-06-03 20:43:02,941 - agent - INFO - mcp_tool_loader.py:144 - [MCP] 已加载 MCP 工具数量: 25

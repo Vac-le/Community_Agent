@@ -1,0 +1,95 @@
+from pathlib import Path
+
+path = Path(r'c:\Users\一叶知秋\Desktop\新社区项目\Community_Agent\agent\graph\executor.py')
+content = path.read_text(encoding='utf-8')
+content += '''
+
+    def _advance_route_index(self,state:AgentState)->AgentState:
+        routes=state.get("routes") or [];next_index=state.get("current_route_index",0)+1
+        if next_index<len(routes):
+            next_route=routes[next_index];state["current_route_index"]=next_index;state["current_route"]=next_route;state["current_worker"]=ROUTE_TO_NODE.get(next_route,"")
+            base_messages=self._build_base_messages(state.get("query") or state.get("original_query",""),state.get("chat_history"),state.get("user_memory_context",""));prior_context=self._build_prior_agents_context(state.get("route_answers") or [])
+            if prior_context:
+                insert_pos=next((i for i,m in enumerate(base_messages) if m.get("role")=="user"),len(base_messages));base_messages.insert(insert_pos,{"role":"system","content":prior_context})
+            state["messages"]=base_messages;state["route_messages"]=base_messages
+        else: state["current_worker"]=""
+        return state
+
+    def _build_prior_agents_context(self,route_answers:list[dict])->str:
+        parts=[]
+        labels={"knowledge":"知识问答","order":"订单","report":"数据分析与图表","weather":"天气"}
+        for item in route_answers:
+            answer=(item.get("answer") or "").strip()
+            if answer: parts.append(f"【{labels.get(item.get('route',''),item.get('route',''))} Agent 已完成的结果】\n{answer[:800]}")
+        return "以下是本次请求中前置 Agent 已完成的任务结果，你可以直接引用这些信息，无需重复查询相同数据：\n\n"+"\n\n".join(parts) if parts else ""
+
+    def _next_worker_from_state(self,state:AgentState)->str:
+        worker=state.get("current_worker");return worker if worker in ROUTE_TO_NODE.values() else ("final_summarizer" if len(state.get("routes") or [])>1 else "reflector")
+
+    def _after_worker_decision(self,state:AgentState)->str:
+        worker=state.get("current_worker");return worker if worker in ROUTE_TO_NODE.values() else ("final_summarizer" if len(state.get("routes") or [])>1 else "reflector")
+
+    def _final_summarizer_node(self,state:AgentState)->AgentState:
+        route_answers=state.get("route_answers") or []
+        if len(route_answers)<=1:
+            if route_answers and not state.get("final_answer"): state["final_answer"]=(route_answers[0].get("answer") or "").strip()
+            return state
+        parts=[];labels={"knowledge":"知识问答","order":"订单处理","report":"数据分析","weather":"天气"}
+        for item in route_answers:
+            answer=(item.get("answer") or "").strip()
+            if answer: parts.append(f"【{labels.get(item.get('route',''),item.get('route','') or 'Agent')}结果】\n{answer}")
+        if not parts: return state
+        history_summary=self._build_history_hint(state.get("chat_history"));joined="\n\n".join(parts)
+        prompt="你是最终答复整合器。请基于多个子 Agent 的结果，输出一份直接面向用户的最终答案。\n要求：1.只输出一个最终答案；2.合并重复信息；3.自然整合依赖关系；4.不要编造事实；5.不要暴露多Agent过程。\n\n"+f"【用户原始问题】\n{state.get('original_query','')}\n\n【最近对话摘要】\n{history_summary or '无'}\n\n【多个子 Agent 的结果】\n{joined}"
+        try:
+            response=chat_model.invoke([SystemMessage(content="你负责将多个子结果整合成一个最终用户答案。"),HumanMessage(content=prompt)]);final_answer=self._extract_message_text(getattr(response,"content",response)).strip()
+            if final_answer: state["final_answer"]=final_answer
+        except Exception as e:
+            logger.warning(f"[FinalSummarizer] 总结失败，回退到顺序拼接答案: {e}");state["final_answer"]="\n\n".join(parts).strip()
+        return state
+
+    def _reflector_node(self,state:AgentState)->AgentState:
+        history_summary=self._build_history_hint(state.get("chat_history"));result=self.reflection_service.check(state.get("original_query",state.get("query","")),state.get("final_answer",""),state.get("called_tools",[]),state.get("tool_observations",[]),history_summary,state.get("user_memory_context",""));logger.info(f"[Reflector] passed={result.passed} should_retry={result.should_retry} attempt={state.get('reflection_attempt',0)} issues={result.issues}")
+        if result.should_retry and state.get("reflection_attempt",0)<self.reflection_service.max_retry:
+            state["should_retry"]=True;state["reflection_attempt"]=state.get("reflection_attempt",0)+1;retry_query=self.reflection_service.build_retry_query(state.get("original_query",""),state.get("final_answer",""),result,state.get("tool_observations",[]),history_summary,state.get("user_memory_context",""));state["query"]=retry_query;rebuilt_messages=self._build_base_messages(retry_query,state.get("chat_history"),state.get("user_memory_context",""));state["messages"]=rebuilt_messages;state["route_messages"]=rebuilt_messages
+        else: state["should_retry"]=False;state["done"]=True
+        return state
+
+    def _after_reflector_decision(self,state:AgentState)->str:
+        return "supervisor" if state.get("should_retry") else "memory_updater"
+
+    def _memory_updater_node(self,state:AgentState)->AgentState:
+        state["done"]=True;return state
+
+    def _build_base_messages(self,query:str,chat_history:list[ChatHistoryMessage]|None,user_memory_context:str)->list[dict[str,str]]:
+        messages=[]
+        if user_memory_context: messages.append({"role":"system","content":user_memory_context})
+        for msg in chat_history or []:
+            if msg.role in {"user","assistant"} and msg.content: messages.append({"role":msg.role,"content":msg.content[-600:]})
+        messages=messages[-12:];messages.append({"role":"user","content":query});return messages
+
+    def _extract_message_text(self,content)->str:
+        if isinstance(content,str): return content
+        if isinstance(content,list):
+            parts=[]
+            for item in content:
+                if isinstance(item,str): parts.append(item)
+                elif isinstance(item,dict): parts.append(str(item.get("text","")))
+                else: parts.append(str(getattr(item,"text","") or ""))
+            return "".join(parts)
+        return str(content) if content is not None else ""
+
+    def _async_update_memory(self,user_id,community_id,query,final_answer):
+        def _worker():
+            try: logger.info(f"[UserMemory] update_result={self.user_memory_service.update_from_query(user_id,community_id,query,final_answer)}")
+            except Exception as e: logger.warning(f"[UserMemory] update failed: {e}")
+        threading.Thread(target=_worker,daemon=True).start()
+
+    def _build_history_hint(self,chat_history:list[ChatHistoryMessage]|None)->str:
+        if not chat_history: return ""
+        parts=[]
+        for msg in chat_history[-6:]:
+            if getattr(msg,"content",None): parts.append(f"{'用户' if msg.role=='user' else '助手'}: {msg.content[:120]}")
+        return "\n".join(parts)
+'''
+path.write_text(content, encoding='utf-8')

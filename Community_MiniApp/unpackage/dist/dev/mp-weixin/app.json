@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/userInfo/userInfo",
+    "pages/user/user",
+    "pages/eat/eat",
+    "pages/eat/sendEat",
+    "pages/purchases/purchases",
+    "pages/purchases/sendPurchase",
+    "pages/home/home",
+    "pages/home/sendHome",
+    "pages/register/register",
+    "pages/login/compareFace",
+    "pages/aiChat/aiChat",
+    "pages/user/userEat",
+    "pages/user/userHome",
+    "pages/user/userPurchase"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "社区便民小程序",
+    "navigationBarBackgroundColor": "#EAF1FF",
+    "backgroundColor": "#EAF1FF",
+    "backgroundColorTop": "#EAF1FF",
+    "backgroundColorBottom": "#EAF1FF",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#EAF1FF",
+    "borderStyle": "white",
+    "color": "#7890B4",
+    "selectedColor": "#5F86FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/首页.png",
+        "selectedIconPath": "/static/首页.png"
+      },
+      {
+        "pagePath": "pages/aiChat/aiChat",
+        "text": "ai助手",
+        "iconPath": "/static/AI.png",
+        "selectedIconPath": "/static/AI.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/static/我的.png",
+        "selectedIconPath": "/static/我的.png"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {}
+}

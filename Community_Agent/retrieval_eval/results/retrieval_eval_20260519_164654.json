@@ -1,0 +1,755 @@
+{
+  "generated_at": "2026-05-19T16:46:54",
+  "vector_store_reused": true,
+  "cases_path": "C:\\Users\\一叶知秋\\Desktop\\新社区项目\\Community_Agent\\retrieval_eval\\cases.json",
+  "summary": {
+    "case_count": 2,
+    "stages": {
+      "dense": {
+        "hit_rate": 1.0,
+        "avg_mrr": 1.0,
+        "avg_hit_count": 10.0
+      },
+      "bm25": {
+        "hit_rate": 1.0,
+        "avg_mrr": 1.0,
+        "avg_hit_count": 10.0
+      },
+      "hybrid": {
+        "hit_rate": 1.0,
+        "avg_mrr": 1.0,
+        "avg_hit_count": 2.5
+      },
+      "rerank": {
+        "hit_rate": 1.0,
+        "avg_mrr": 1.0,
+        "avg_hit_count": 2.5
+      }
+    }
+  },
+  "cases": [
+    {
+      "name": "机动车限速",
+      "query": "社区机动车限速规定多少",
+      "expected_sources": [
+        "社区公告.txt"
+      ],
+      "expected_keywords": [
+        "机动车",
+        "限速",
+        "5公里/小时"
+      ],
+      "stages": {
+        "dense": {
+          "metrics": {
+            "hit_at_k": true,
+            "hit_count": 10,
+            "mrr": 1.0
+          },
+          "docs": [
+            {
+              "rank": 1,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#20",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "机动车进入社区减速慢行，园区内限速 5 公里 / 小时，禁止鸣笛、超速行驶、随意变道、占道会车，礼让行人、老人及儿童。禁止在园区内练车、飙车、试车，杜绝危险驾驶行为。"
+            },
+            {
+              "rank": 2,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#41",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "社区倡导邻里互助、文明沟通、依法表达诉求，共同维护安全有序的居住环境。 本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 社区倡导邻里互助、文明沟通、依法表达诉求，共同维护安全有序的居..."
+            },
+            {
+              "rank": 3,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#17",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本条内容属于补充说明，不替代已经发布的专项公告、法律法规和正式管理制度。 本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 本条内容属于补充说明，不替代已经发布的专项公告、法律法规和正..."
+            },
+            {
+              "rank": 4,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#77",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本条内容属于补充说明，不替代已经发布的专项公告、法律法规和正式管理制度。 本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 本条内容属于补充说明，不替代已经发布的专项公告、法律法规和正..."
+            },
+            {
+              "rank": 5,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#11",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 各楼栋网格员会结合实际情况进行入户提醒、电话沟通或线上告知。"
+            },
+            {
+              "rank": 6,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#71",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 各楼栋网格员会结合实际情况进行入户提醒、电话沟通或线上告知。"
+            },
+            {
+              "rank": 7,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#53",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "社区工作人员将持续开展日常巡查，对发现的问题建立台账，按照轻重缓急分类处理。 本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 社区工作人员将持续开展日常巡查，对发现的问题建立台账，按..."
+            },
+            {
+              "rank": 8,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#59",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 居民在理解和遵守管理要求的同时，也可以通过合理渠道提出优化建议。"
+            },
+            {
+              "rank": 9,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#23",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 如同一事项存在多个通知版本，应以发布日期较新的正式公告为准。"
+            },
+            {
+              "rank": 10,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#83",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 如同一事项存在多个通知版本，应以发布日期较新的正式公告为准。"
+            }
+          ]
+        },
+        "bm25": {
+          "metrics": {
+            "hit_at_k": true,
+            "hit_count": 10,
+            "mrr": 1.0
+          },
+          "docs": [
+            {
+              "rank": 1,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#11",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 6.332763460886232,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 各楼栋网格员会结合实际情况进行入户提醒、电话沟通或线上告知。"
+            },
+            {
+              "rank": 2,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#71",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 6.332763460886232,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 各楼栋网格员会结合实际情况进行入户提醒、电话沟通或线上告知。"
+            },
+            {
+              "rank": 3,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#59",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 6.234366866607624,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 居民在理解和遵守管理要求的同时，也可以通过合理渠道提出优化建议。"
+            },
+            {
+              "rank": 4,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#23",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 6.139078991230072,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 如同一事项存在多个通知版本，应以发布日期较新的正式公告为准。"
+            },
+            {
+              "rank": 5,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#83",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 6.139078991230072,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 如同一事项存在多个通知版本，应以发布日期较新的正式公告为准。"
+            },
+            {
+              "rank": 6,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#24",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 5.987700765362357,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "电瓶车相关提醒：本段仅说明停放、充电、消防和通行礼让要求，未发布明确的电瓶车限速数值。居民询问具体限速时，应查询专项交通公告或现场标识，避免把机动车限速、非机动车低速慢行倡议和消防安全要求混为一谈。"
+            },
+            {
+              "rank": 7,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#54",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 5.987700765362357,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "电瓶车相关提醒：本段仅说明停放、充电、消防和通行礼让要求，未发布明确的电瓶车限速数值。居民询问具体限速时，应查询专项交通公告或现场标识，避免把机动车限速、非机动车低速慢行倡议和消防安全要求混为一谈。"
+            },
+            {
+              "rank": 8,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#84",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 5.987700765362357,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "电瓶车相关提醒：本段仅说明停放、充电、消防和通行礼让要求，未发布明确的电瓶车限速数值。居民询问具体限速时，应查询专项交通公告或现场标识，避免把机动车限速、非机动车低速慢行倡议和消防安全要求混为一谈。"
+            },
+            {
+              "rank": 9,
+              "source_file_name": "压测知识库_02.txt",
+              "chunk_id": "cb317c441347eef630885c53cdedd9f0#17",
+              "parent_doc_id": "cb317c441347eef630885c53cdedd9f0",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 5.987700765362357,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "电瓶车相关提醒：本段仅说明停放、充电、消防和通行礼让要求，未发布明确的电瓶车限速数值。居民询问具体限速时，应查询专项交通公告或现场标识，避免把机动车限速、非机动车低速慢行倡议和消防安全要求混为一谈。"
+            },
+            {
+              "rank": 10,
+              "source_file_name": "压测知识库_02.txt",
+              "chunk_id": "cb317c441347eef630885c53cdedd9f0#46",
+              "parent_doc_id": "cb317c441347eef630885c53cdedd9f0",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 5.987700765362357,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "电瓶车相关提醒：本段仅说明停放、充电、消防和通行礼让要求，未发布明确的电瓶车限速数值。居民询问具体限速时，应查询专项交通公告或现场标识，避免把机动车限速、非机动车低速慢行倡议和消防安全要求混为一谈。"
+            }
+          ]
+        },
+        "hybrid": {
+          "metrics": {
+            "hit_at_k": true,
+            "hit_count": 3,
+            "mrr": 1.0
+          },
+          "docs": [
+            {
+              "rank": 1,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#11",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": [
+                "bm25",
+                "dense"
+              ],
+              "fusion_score": 0.03177805800756621,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 各楼栋网格员会结合实际情况进行入户提醒、电话沟通或线上告知。"
+            },
+            {
+              "rank": 2,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#20",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": [
+                "dense"
+              ],
+              "fusion_score": 0.01639344262295082,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "机动车进入社区减速慢行，园区内限速 5 公里 / 小时，禁止鸣笛、超速行驶、随意变道、占道会车，礼让行人、老人及儿童。禁止在园区内练车、飙车、试车，杜绝危险驾驶行为。"
+            },
+            {
+              "rank": 3,
+              "source_file_name": "压测知识库_02.txt",
+              "chunk_id": "cb317c441347eef630885c53cdedd9f0#17",
+              "parent_doc_id": "cb317c441347eef630885c53cdedd9f0",
+              "recall_sources": [
+                "bm25"
+              ],
+              "fusion_score": 0.014492753623188406,
+              "bm25_score": 5.987700765362357,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "电瓶车相关提醒：本段仅说明停放、充电、消防和通行礼让要求，未发布明确的电瓶车限速数值。居民询问具体限速时，应查询专项交通公告或现场标识，避免把机动车限速、非机动车低速慢行倡议和消防安全要求混为一谈。"
+            }
+          ]
+        },
+        "rerank": {
+          "metrics": {
+            "hit_at_k": true,
+            "hit_count": 3,
+            "mrr": 1.0
+          },
+          "docs": [
+            {
+              "rank": 1,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#20",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": [
+                "dense"
+              ],
+              "fusion_score": 0.01639344262295082,
+              "bm25_score": null,
+              "rerank_score": 0.7771310959891475,
+              "hit": true,
+              "preview": "机动车进入社区减速慢行，园区内限速 5 公里 / 小时，禁止鸣笛、超速行驶、随意变道、占道会车，礼让行人、老人及儿童。禁止在园区内练车、飙车、试车，杜绝危险驾驶行为。"
+            },
+            {
+              "rank": 2,
+              "source_file_name": "压测知识库_01.txt",
+              "chunk_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4#11",
+              "parent_doc_id": "c039393b0ca1fc89c4ece7ab1ed4a6c4",
+              "recall_sources": [
+                "bm25",
+                "dense"
+              ],
+              "fusion_score": 0.03177805800756621,
+              "bm25_score": null,
+              "rerank_score": 0.3511011856266118,
+              "hit": true,
+              "preview": "本补充说明强调车辆文明通行和停车秩序，不单独调整机动车限速数值，具体限速仍以社区综合公告和道路标识为准。 各楼栋网格员会结合实际情况进行入户提醒、电话沟通或线上告知。"
+            },
+            {
+              "rank": 3,
+              "source_file_name": "压测知识库_02.txt",
+              "chunk_id": "cb317c441347eef630885c53cdedd9f0#17",
+              "parent_doc_id": "cb317c441347eef630885c53cdedd9f0",
+              "recall_sources": [
+                "bm25"
+              ],
+              "fusion_score": 0.014492753623188406,
+              "bm25_score": 5.987700765362357,
+              "rerank_score": 0.17534614486487504,
+              "hit": true,
+              "preview": "电瓶车相关提醒：本段仅说明停放、充电、消防和通行礼让要求，未发布明确的电瓶车限速数值。居民询问具体限速时，应查询专项交通公告或现场标识，避免把机动车限速、非机动车低速慢行倡议和消防安全要求混为一谈。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "社区活动",
+      "query": "社区现在有什么活动",
+      "expected_sources": [
+        "社区公告.txt"
+      ],
+      "expected_keywords": [
+        "活动",
+        "社区"
+      ],
+      "stages": {
+        "dense": {
+          "metrics": {
+            "hit_at_k": true,
+            "hit_count": 10,
+            "mrr": 1.0
+          },
+          "docs": [
+            {
+              "rank": 1,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#12",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区倡导邻里互助、文明沟通、依法表达诉求，共同维护安全有序的居住..."
+            },
+            {
+              "rank": 2,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#64",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区倡导邻里互助、文明沟通、依法表达诉求，共同维护安全有序的居住..."
+            },
+            {
+              "rank": 3,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#7",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 公共空间属于全体业主共同使用，任何个人不得长期占用、损坏或改变用..."
+            },
+            {
+              "rank": 4,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#59",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 公共空间属于全体业主共同使用，任何个人不得长期占用、损坏或改变用..."
+            },
+            {
+              "rank": 5,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#23",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区工作人员将持续开展日常巡查，对发现的问题建立台账，按照轻重缓..."
+            },
+            {
+              "rank": 6,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#75",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区工作人员将持续开展日常巡查，对发现的问题建立台账，按照轻重缓..."
+            },
+            {
+              "rank": 7,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#2",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 居民应妥善保管个人财物和身份信息，不轻信陌生电话、短信和不明链接..."
+            },
+            {
+              "rank": 8,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#54",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 居民应妥善保管个人财物和身份信息，不轻信陌生电话、短信和不明链接..."
+            },
+            {
+              "rank": 9,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#29",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 居民在理解和遵守管理要求的同时，也可以通过合理渠道提出优化建议。"
+            },
+            {
+              "rank": 10,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#81",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 居民在理解和遵守管理要求的同时，也可以通过合理渠道提出优化建议。"
+            }
+          ]
+        },
+        "bm25": {
+          "metrics": {
+            "hit_at_k": true,
+            "hit_count": 10,
+            "mrr": 1.0
+          },
+          "docs": [
+            {
+              "rank": 1,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#33",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 5.522744171272196,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "社区定期开展免费义诊、健康讲座、公益理发、家电维修、法律咨询、反诈宣传等志愿服务活动，活动时间及地点将通过社区公告栏、业主微信群、公众号提前发布，请居民及时关注参与。"
+            },
+            {
+              "rank": 2,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#12",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.6735842776121945,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区倡导邻里互助、文明沟通、依法表达诉求，共同维护安全有序的居住..."
+            },
+            {
+              "rank": 3,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#64",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.6735842776121945,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区倡导邻里互助、文明沟通、依法表达诉求，共同维护安全有序的居住..."
+            },
+            {
+              "rank": 4,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#23",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.644752685212251,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区工作人员将持续开展日常巡查，对发现的问题建立台账，按照轻重缓..."
+            },
+            {
+              "rank": 5,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#75",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.644752685212251,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区工作人员将持续开展日常巡查，对发现的问题建立台账，按照轻重缓..."
+            },
+            {
+              "rank": 6,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#34",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.437077046151852,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "针对社区独居老人、空巢老人、残疾人、困境儿童、困难家庭，社区建立常态化帮扶台账，定期上门走访、慰问关怀、提供生活帮扶、应急救助服务，有特殊困难的居民可主动向社区居委会报备。"
+            },
+            {
+              "rank": 7,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#44",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.297933760204716,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "欢迎广大居民对社区管理、物业服务、公共设施改造、活动组织等提出合理化建议，社区将定期召开居民议事会、业主代表座谈会，听取居民意见，优化社区治理服务方案。 十、业主委员会工作及换届增补公告"
+            },
+            {
+              "rank": 8,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#39",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.138493361757878,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 各楼栋网格员会结合实际情况进行入户提醒、电话沟通或线上告知。"
+            },
+            {
+              "rank": 9,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#10",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.096683016834763,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "禁止在社区墙面、单元门、电梯轿厢、楼道墙壁、公共设施上乱涂乱画、张贴小广告、宣传单页、开锁疏通等野广告。社区将定期组织志愿者开展小广告清理专项活动，同时欢迎居民随手拍照举报违规张贴行为。 三、社区消防安全管理公告"
+            },
+            {
+              "rank": 10,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#29",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": null,
+              "fusion_score": null,
+              "bm25_score": 4.089347074593589,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 居民在理解和遵守管理要求的同时，也可以通过合理渠道提出优化建议。"
+            }
+          ]
+        },
+        "hybrid": {
+          "metrics": {
+            "hit_at_k": true,
+            "hit_count": 2,
+            "mrr": 1.0
+          },
+          "docs": [
+            {
+              "rank": 1,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#12",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": [
+                "bm25",
+                "dense"
+              ],
+              "fusion_score": 0.03252247488101534,
+              "bm25_score": null,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区倡导邻里互助、文明沟通、依法表达诉求，共同维护安全有序的居住..."
+            },
+            {
+              "rank": 2,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#33",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": [
+                "bm25"
+              ],
+              "fusion_score": 0.01639344262295082,
+              "bm25_score": 5.522744171272196,
+              "rerank_score": null,
+              "hit": true,
+              "preview": "社区定期开展免费义诊、健康讲座、公益理发、家电维修、法律咨询、反诈宣传等志愿服务活动，活动时间及地点将通过社区公告栏、业主微信群、公众号提前发布，请居民及时关注参与。"
+            }
+          ]
+        },
+        "rerank": {
+          "metrics": {
+            "hit_at_k": true,
+            "hit_count": 2,
+            "mrr": 1.0
+          },
+          "docs": [
+            {
+              "rank": 1,
+              "source_file_name": "社区公告.txt",
+              "chunk_id": "a0eba622ae04516896055897ef1d4586#33",
+              "parent_doc_id": "a0eba622ae04516896055897ef1d4586",
+              "recall_sources": [
+                "bm25"
+              ],
+              "fusion_score": 0.01639344262295082,
+              "bm25_score": 5.522744171272196,
+              "rerank_score": 0.7672764719541264,
+              "hit": true,
+              "preview": "社区定期开展免费义诊、健康讲座、公益理发、家电维修、法律咨询、反诈宣传等志愿服务活动，活动时间及地点将通过社区公告栏、业主微信群、公众号提前发布，请居民及时关注参与。"
+            },
+            {
+              "rank": 2,
+              "source_file_name": "压测知识库_05.txt",
+              "chunk_id": "f3bc5191dbdc52184addf5ccd49caade#12",
+              "parent_doc_id": "f3bc5191dbdc52184addf5ccd49caade",
+              "recall_sources": [
+                "bm25",
+                "dense"
+              ],
+              "fusion_score": 0.03252247488101534,
+              "bm25_score": null,
+              "rerank_score": 0.4178367714218588,
+              "hit": true,
+              "preview": "老年人体检、公益理发、健康讲座、法律咨询、反诈宣传等活动一般会提前通过公告栏、微信群和公众号发布。居民可根据通知要求预约报名，活动名额有限时按报名顺序或重点人群优先原则安排。 社区倡导邻里互助、文明沟通、依法表达诉求，共同维护安全有序的居住..."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

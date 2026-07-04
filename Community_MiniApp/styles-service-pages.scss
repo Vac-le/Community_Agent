@@ -1,0 +1,402 @@
+/* 服务模块公共样式：解决页面样式未单独产出时的兜底加载 */
+
+/* ========== 家政服务 home.vue ========== */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #fafafa;
+  padding-bottom: 40rpx;
+}
+
+.header-banner {
+  position: relative;
+  height: 300rpx;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  padding: 0 40rpx;
+  overflow: hidden;
+  border-bottom: 1rpx solid #e0e0e0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-content {
+  flex: 1;
+  z-index: 2;
+}
+
+.banner-title {
+  font-size: 48rpx;
+  font-weight: 800;
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 10rpx;
+  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+
+.banner-subtitle {
+  font-size: 28rpx;
+  color: #7f8c8d;
+  display: block;
+}
+
+.section-title {
+  position: relative;
+  margin: 40rpx 30rpx 30rpx;
+  text-align: center;
+}
+
+.title-text {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #1a202c;
+  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+
+.title-decoration {
+  position: absolute;
+  bottom: -10rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60rpx;
+  height: 4rpx;
+  background: #74b9ff;
+  border-radius: 2rpx;
+}
+
+.service-categories {
+  background: #fff;
+  margin: 20rpx;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 4rpx 15rpx rgba(0, 0, 0, 0.1);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20rpx;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx 10rpx;
+  border-radius: 15rpx;
+  transition: all 0.3s ease;
+}
+
+.category-item.active {
+  background: #f5f5f5;
+  border: 2rpx solid #e0e0e0;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}
+
+.icon-image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.category-name {
+  font-size: 24rpx;
+  color: #636e72;
+  text-align: center;
+  font-weight: 500;
+}
+
+.service-list {
+  margin: 20rpx;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 15rpx rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 380rpx;
+}
+
+.service-image {
+  width: 100%;
+  height: 200rpx;
+  background: #f0f0f0;
+}
+
+.service-info {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.service-name {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #303133;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.service-desc {
+  font-size: 24rpx;
+  color: #606266;
+  margin-bottom: 15rpx;
+  line-height: 1.4;
+}
+
+.price-label {
+  font-size: 20rpx;
+  color: #606266;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #e17055;
+}
+
+.book-btn,
+.confirm-btn,
+.order-btn {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: #ffffff;
+  border: none;
+}
+
+/* ========== 餐饮服务 eat.vue ========== */
+.eat-container {
+  background: #fafafa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.left-categories {
+  width: 180rpx;
+  background: #f5f5f5;
+  overflow-y: auto;
+  flex-shrink: 0;
+  border-right: 1rpx solid #e0e0e0;
+}
+
+.left-categories .category-item {
+  padding: 35rpx 15rpx;
+  text-align: center;
+  background: #f5f5f5;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.left-categories .category-item.active {
+  background: #ffffff;
+}
+
+.right-food-list {
+  flex: 1;
+  overflow-y: auto;
+  background: #ffffff;
+}
+
+.food-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-item {
+  background: #ffffff;
+  padding: 25rpx 20rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.food-image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.food-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.food-name {
+  font-size: 30rpx;
+  margin-bottom: 8rpx;
+  color: #333;
+  font-weight: 600;
+}
+
+.food-desc {
+  font-size: 24rpx;
+  margin-bottom: 12rpx;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.food-price {
+  display: flex;
+  align-items: baseline;
+}
+
+.unit {
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 4rpx;
+}
+
+.add-button {
+  width: 50rpx;
+  height: 50rpx;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  border: none;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15rpx;
+  flex-shrink: 0;
+}
+
+.add-text {
+  color: #ffffff;
+  font-size: 36rpx;
+  line-height: 1;
+}
+
+/* ========== 代购服务 purchases.vue ========== */
+.purchases-container {
+  background: #fafafa;
+  min-height: 100vh;
+  padding-bottom: 200rpx;
+}
+
+.product-categories {
+  margin: 40rpx 30rpx 30rpx;
+}
+
+.product-list {
+  margin: 0 30rpx 30rpx;
+}
+
+.product-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.product-item {
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4rpx 15rpx rgba(0, 0, 0, 0.1);
+  border: 2rpx solid #e0e0e0;
+}
+
+.product-image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 15rpx;
+  margin-right: 20rpx;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 28rpx;
+  margin-bottom: 5rpx;
+  color: #2d3436;
+  font-weight: 600;
+}
+
+.product-desc {
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+  color: #636e72;
+}
+
+.product-price {
+  display: flex;
+  align-items: baseline;
+}
+
+.cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 25rpx 25rpx 0 0;
+  padding: 25rpx 30rpx 30rpx;
+  box-shadow: 0 -8rpx 25rpx rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 25rpx;
+}
+
+@media (max-width: 750rpx) {
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

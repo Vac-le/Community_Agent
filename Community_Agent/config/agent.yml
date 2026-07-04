@@ -1,0 +1,23 @@
+llm_provider: openai_compatible
+chat_model_name: mimo-v2.5-pro
+embedding_model_name: text-embedding-v4
+external_data_path: data/external/records.csv
+
+memory:
+  user_long_memory:
+    enabled: true
+    redis_url: redis://localhost:6379/0
+    key_prefix: agent:user_long_memory
+    max_items_per_category: 20
+    max_context_chars: 1600
+  short_history:
+    enabled: true
+    redis_url: redis://localhost:6379/0
+    key_prefix: agent:chat_history
+    ttl_seconds: 86400
+    max_messages: 20
+
+reflection:
+  enabled: true
+  max_retry: 1
+  use_llm_check: true

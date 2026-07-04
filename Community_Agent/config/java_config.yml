@@ -1,0 +1,7 @@
+python_backend:
+  host: 127.0.0.1
+  port: 9000
+
+java_backend:
+  base_url: http://127.0.0.1:8088
+

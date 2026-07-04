@@ -1,0 +1,27 @@
+/* Global layout reset to eliminate unexpected page gaps */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure images and media don't overflow containers */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Smooth fonts across the app */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+

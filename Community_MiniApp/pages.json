@@ -1,0 +1,163 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "登录"
+			}
+		},
+		{
+			"path" : "pages/userInfo/userInfo",
+			"style" : 
+			{
+				"navigationBarTitleText" : "用户信息"
+			}
+		},
+		{
+			"path" : "pages/user/user",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的"
+			}
+		},
+		{
+			"path" : "pages/eat/eat",
+			"style" : 
+			{
+				"navigationBarTitleText" : "餐饮服务"
+			}
+		},
+		{
+			"path" : "pages/eat/sendEat",
+			"style" : 
+			{
+				"navigationBarTitleText" : "餐饮配送"
+			}
+		},
+		{
+			"path" : "pages/purchases/purchases",
+			"style" : 
+			{
+				"navigationBarTitleText" : "代购服务"
+			}
+		},
+		{
+			"path" : "pages/purchases/sendPurchase",
+			"style" : 
+			{
+				"navigationBarTitleText" : "代购配送"
+			}
+		},
+		{
+			"path" : "pages/home/home",
+			"style" : 
+			{
+				"navigationBarTitleText" : "家政服务"
+			}
+		},
+		{
+			"path" : "pages/home/sendHome",
+			"style" : 
+			{
+				"navigationBarTitleText" : "家政上门"
+			}
+		},
+		{
+			"path" : "pages/register/register",
+			"style" : 
+			{
+				"navigationBarTitleText" : "用户注册"
+			}
+		},
+		{
+			"path" : "pages/login/compareFace",
+			"style" : 
+			{
+				"navigationBarTitleText" : "人脸识别"
+			}
+		},
+		{
+			"path" : "pages/aiChat/aiChat",
+			"style" : 
+			{
+				"navigationBarTitleText" : "Ai助手",
+				"disableScroll": false,
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				},
+				"h5": {
+					"pullToRefresh": {
+						"support": false
+					}
+				}
+			}
+		},
+		{
+			"path" : "pages/user/userEat",
+			"style" : 
+			{
+				"navigationBarTitleText" : "餐饮订单"
+			}
+		},
+		{
+			"path" : "pages/user/userHome",
+			"style" : 
+			{
+				"navigationBarTitleText" : "家政订单"
+			}
+		},
+		{
+			"path" : "pages/user/userPurchase",
+			"style" : 
+			{
+				"navigationBarTitleText" : "代购订单"
+			}
+		}
+	],
+	"tabBar": {//底部导航栏
+		"backgroundColor": "#EAF1FF",
+		"borderStyle": "white",
+		"color": "#7890B4",
+		"selectedColor": "#5F86FF",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "/static/首页.png",
+				"selectedIconPath": "/static/首页.png"//点击时的图片
+			},
+			{
+				
+				"pagePath": "pages/aiChat/aiChat",
+				"text": "ai助手",
+				"iconPath": "/static/AI.png",
+				"selectedIconPath": "/static/AI.png"
+				
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "/static/我的.png",
+				"selectedIconPath": "/static/我的.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",//导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+		"navigationBarTitleText": "社区便民小程序",//导航栏标题文字内容
+		"navigationBarBackgroundColor": "#EAF1FF",//导航栏背景颜色（同状态栏背景色）
+		"backgroundColor":"#EAF1FF",//下拉显示出来的窗口的背景色
+		"backgroundColorTop":"#EAF1FF",
+		"backgroundColorBottom":"#EAF1FF",
+		"enablePullDownRefresh": true//是否开启下拉生命周期
+	},
+	"uniIdRouter": {}
+}

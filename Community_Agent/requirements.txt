@@ -1,0 +1,8 @@
+jieba>=0.42.1
+rank-bm25>=0.2.2
+langchain>=0.3.0
+langgraph>=0.2.0
+langchain-openai>=0.2.0
+langchain-milvus>=0.1.7
+pymilvus[milvus_lite]>=2.6.15
+redis>=5.0.0

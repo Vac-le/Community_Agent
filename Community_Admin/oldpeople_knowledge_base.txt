@@ -1,0 +1,444 @@
+oldpeople 数据库知识库文档
+========================
+
+一、数据库概览
+------------------------
+数据库名：oldpeople
+字符集：utf8mb4 / utf8（部分旧表）
+数据库用途：社区养老便民服务平台后台数据库，包含管理员、社区、公告、活动、餐饮商品、家政商品、代购商品、用户、订单、操作日志等模块。
+适用场景：可直接作为大模型知识库导入材料，用于回答“数据库有哪些表、字段含义、外键关系、关键业务模块”等问题。
+表总数：26
+核心业务模块：管理员与权限、社区管理、社区公告、社区活动、餐饮商品、家政商品、代购商品、订单管理、用户管理、操作日志。
+主要业务表：activity, admin, admin_menu, admin_menus, admin_users, community, food, food_type, home, home_type, menu, notice, order_type, orders, orders_food, orders_home, orders_purchases, purchases, purchases_type, sys_oper_log, type, user, user_menu
+
+二、表结构总览
+------------------------
+1. activity（社区活动表）
+字段：
+- id：活动主键
+- title：活动标题
+- content：活动内容
+- oper_time：活动时间
+- communityid：所属社区ID
+- img：活动封面图
+
+2. admin（管理员表）
+字段：
+- id：管理员ID
+- account：登录账号
+- password：密码
+- reg_time：注册时间
+- type：管理员类型
+- adminid：上级管理员ID/创建者
+- phone：手机号
+- gender：性别
+- community_id：所属社区ID
+
+3. admin_menu（管理员-菜单关联表）
+字段：
+- adminid：管理员ID
+- menuid：菜单ID
+
+4. admin_menus（后台菜单表）
+字段：
+- id：后台菜单ID
+- name：菜单名称
+- url：路由地址
+- type：菜单类型
+- parent_id：父级菜单ID
+
+5. admin_users（后台管理员用户表）
+字段：
+- id：管理员用户ID
+- username：后台登录用户名
+- password_hash：密码哈希
+- name：姓名/昵称
+- role：角色，默认 admin
+- create_time：创建时间
+- update_time：更新时间
+
+6. community（社区表）
+字段：
+- id：社区ID
+- name：社区名称
+- address：社区地址
+- adminName：负责人姓名
+- adminphone：负责人电话
+- cityid：城市ID
+
+7. food（餐饮商品表）
+字段：
+- id：餐饮商品ID
+- communityid：所属社区ID
+- name：商品名称
+- description：描述
+- img：商品图片
+- price：价格
+- typeid：餐饮分类ID
+
+8. food_type（餐饮分类表）
+字段：
+- id：餐饮分类ID
+- name：分类名称
+- icon：分类图标
+
+9. home（家政商品表）
+字段：
+- id：家政商品ID
+- name：服务名称
+- price：价格
+- communityid：所属社区ID
+- img：封面图
+- typeid：家政分类ID
+- description：服务描述
+
+10. home_type（家政分类表）
+字段：
+- id：家政分类ID
+- name：分类名称
+- icon：图标
+
+11. menu（小程序首页菜单表）
+字段：
+- id：菜单ID
+- name：菜单名称
+- url：页面路径
+- typeid：用户类型ID
+- img：菜单图标
+
+12. notice（社区公告表）
+字段：
+- id：公告ID
+- title：公告标题
+- content：公告内容
+- oper_time：发布时间
+- communityid：所属社区ID
+
+13. order_type（订单类型表）
+字段：
+- id：订单类型ID
+- name：订单类型名称
+说明：1=餐饮，2=代购，3=家政
+
+14. orders（订单主表）
+字段：
+- id：订单ID
+- start_time：下单时间
+- end_time：完成时间
+- userid：用户ID
+- sendid：配送员ID
+- typeid：订单类型ID
+- amount：订单金额
+- delivery_address：配送地址
+- delivery_phone：联系电话
+- remark：备注
+- order_status：订单状态
+- communityid：所属社区ID
+- order_date：预约/订单日期
+
+15. orders_food（餐饮订单商品关联表）
+字段：
+- ordersid：订单ID
+- foodid：餐品ID
+
+16. orders_home（家政订单商品关联表）
+字段：
+- ordersid：订单ID
+- homeid：家政商品ID
+
+17. orders_purchases（代购订单商品关联表）
+字段：
+- purchasesid：代购商品ID
+- ordersid：订单ID
+
+18. purchases（代购商品表）
+字段：
+- id：商品ID
+- communityid：所属社区ID
+- name：商品名称
+- img：商品图片
+- price：价格
+- typeid：分类ID
+- description：描述
+
+19. purchases_type（代购分类表）
+字段：
+- id：分类ID
+- name：分类名称
+- icon：分类图标
+
+20. sys_oper_log（系统操作日志表）
+字段：
+- id：日志主键
+- title：模块标题
+- business_type：业务类型（0其它 1新增 2修改 3删除 4查询 5导出 6导入）
+- method：方法名称
+- request_method：请求方式
+- operator_type：操作类别（0其它 1后台用户 2手机端用户）
+- oper_name：操作人员
+- dept_name：部门名称
+- oper_url：请求URL
+- oper_ip：主机地址
+- oper_location：操作地点
+- oper_param：请求参数
+- json_result：返回参数
+- status：操作状态（0正常 1异常）
+- error_msg：错误消息
+- oper_time：操作时间
+- cost_time：消耗时间（毫秒）
+
+21. type（用户类型表）
+字段：
+- id：类型ID
+- name：类型名称
+说明：1=用户，2=配送员
+
+22. user（用户/配送员表）
+字段：
+- id：用户ID
+- name：姓名
+- age：年龄
+- address：地址
+- phone：手机号
+- typeid：身份类型ID
+- gender：性别
+- reg_time：注册时间
+- communityid：所属社区ID
+- password：密码
+- user_face：用户头像
+- img：展示图片
+
+23. user_menu（用户中心菜单表）
+字段：
+- id：菜单ID
+- name：菜单名称
+- url：页面路径
+- typeid：用户类型ID
+- img：图标
+
+三、主要外键关系
+------------------------
+1. activity.communityid -> community.id
+含义：活动属于某个社区
+
+2. admin.community_id -> community.id
+含义：管理员绑定所属社区
+
+3. admin.adminid -> admin.id
+含义：管理员自关联，上级/创建者
+
+4. admin_menu.adminid -> admin.id
+含义：管理员菜单授权
+
+5. admin_menu.menuid -> admin_menus.id
+含义：后台菜单授权明细
+
+6. food.communityid -> community.id
+含义：餐饮商品归属社区
+
+7. food.typeid -> food_type.id
+含义：餐饮商品分类
+
+8. home.communityid -> community.id
+含义：家政商品归属社区
+
+9. home.typeid -> home_type.id
+含义：家政商品分类
+
+10. menu.typeid -> type.id
+含义：首页菜单按用户/配送员身份区分
+
+11. notice.communityid -> community.id
+含义：公告属于某个社区
+
+12. orders.userid -> user.id
+含义：下单用户
+
+13. orders.sendid -> user.id
+含义：配送员
+
+14. orders.typeid -> order_type.id
+含义：订单类型关联
+
+15. orders.communityid -> community.id
+含义：订单所在社区
+
+16. orders_food.ordersid -> orders.id
+含义：餐饮订单明细
+
+17. orders_food.foodid -> food.id
+含义：餐品明细
+
+18. orders_home.ordersid -> orders.id
+含义：家政订单明细
+
+19. orders_home.homeid -> home.id
+含义：家政服务明细
+
+20. orders_purchases.ordersid -> orders.id
+含义：代购订单明细
+
+21. orders_purchases.purchasesid -> purchases.id
+含义：代购商品明细
+
+22. purchases.communityid -> community.id
+含义：代购商品归属社区
+
+23. purchases.typeid -> purchases_type.id
+含义：代购商品分类
+
+24. user.typeid -> type.id
+含义：用户/配送员身份类型
+
+25. user.communityid -> community.id
+含义：用户所属社区
+
+26. user_menu.typeid -> type.id
+含义：用户中心菜单按身份区分
+
+四、关键初始化数据摘要
+------------------------
+1. community
+- 1：陕西理工大学
+- 2：汉台社区
+
+2. admin
+- 1：admin（超级管理员）
+- 2：Lisa（社区管理员，community_id=1）
+
+3. admin_menus
+后台菜单包括：
+- 管理员管理
+- 社区数据
+- 社区信息管理
+- 用户管理
+- 配送员管理
+- 社区天气
+- 订单管理
+- 商品管理
+- 社区公告管理
+- 社区活动管理
+- 操作日志
+
+4. food_type
+- 1：主食
+- 2：荤菜
+- 3：素菜
+- 4：汤品
+- 5：饮品
+
+5. food
+示例商品：
+- 清蒸鲈鱼
+- 青菜豆腐
+- 冬瓜排骨汤
+- 小米粥
+- 银耳莲子汤
+
+6. home_type
+- 清洁服务
+- 家电维修
+- 管道疏通
+- 搬家服务
+- 护理陪护
+- 家具安装
+- 其他服务
+
+7. home
+示例商品：
+- 深度清洁服务
+- 日常保洁
+- 空调维修清洗
+- 老人陪护
+- 病患护理
+- 打扫宿舍
+
+8. purchases_type
+- 日用品
+- 食品
+- 水果蔬菜
+- 米面粮油
+- 家居用品
+
+9. purchases
+示例商品：
+- 牙刷
+- 洗衣液2L装
+- 卷纸12卷装
+- 洗洁精500ml
+- 垃圾袋50个装
+- 牙膏120g
+- 香蕉500g
+
+10. order_type
+- 1：餐饮
+- 2：代购
+- 3：家政
+
+11. notice
+示例公告：
+- 社区便民服务小程序正式上线！！！
+- 新增家政服务，预约更便捷
+- 代购服务覆盖范围扩大通知
+
+12. activity
+示例活动：
+- 测试数据
+- 社区便民服务升级
+- hello world
+
+13. type
+- 1：用户
+- 2：配送员
+
+14. user
+示例人员：
+- 张三
+- 王五
+- 李四
+- 赵六
+等
+
+15. sys_oper_log
+日志覆盖行为包括：
+- 管理员登录
+- 用户信息查询
+- 配送员信息查询
+- 家政订单详情查询
+- 代购订单详情查询
+- 餐饮订单详情查询
+- 商品新增、修改、删除
+- 公告新增、删除
+- 操作日志查询
+
+五、适合知识库的问答方向
+------------------------
+该文档适合支持如下问题：
+- 这个数据库有哪些表？
+- 订单主表是哪个？
+- 用户和配送员是不是同一张表？
+- 社区公告和社区活动分别在哪张表？
+- 餐饮、家政、代购商品分别在哪些表？
+- 操作日志表有哪些字段？
+- admin、admin_users 有什么区别？
+- 订单和商品的多对多关系如何实现？
+- 哪些表和 community 表有关联？
+
+六、说明
+------------------------
+本文件是将原始 SQL 结构化整理后的纯文本知识库版本。
+相比直接上传 SQL：
+- 更容易被知识库解析
+- 更适合大模型分段检索
+- 更适合问答式知识理解
+
+如果后续需要，我还可以继续帮你生成：
+1. 逐字段完整明细版 txt
+2. 按“每张表一个 txt”拆分版
+3. 更适合知识库切片的 md 版
+
+
+
+
+
+

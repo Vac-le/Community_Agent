@@ -1,0 +1,32 @@
+{
+  "user_id": 1,
+  "community_id": 1,
+  "profile": [
+    {
+      "content": "用户姓名为曹森程",
+      "scope": "general",
+      "confidence": 0.99,
+      "created_at": "2026-05-20T14:28:48"
+    }
+  ],
+  "communication_preferences": [],
+  "food_preferences": [
+    {
+      "content": "用户不吃辣，推荐菜品时应避免辣味菜",
+      "scope": "food_order",
+      "confidence": 0.95,
+      "created_at": "2026-05-20T12:59:51"
+    }
+  ],
+  "community_preferences": [],
+  "avoidances": [],
+  "contact_preferences": [
+    {
+      "content": "用户邮箱是 2087376402@qq.com，发送图表或分析报告邮件时可优先使用该邮箱",
+      "scope": "email_delivery",
+      "confidence": 1.0,
+      "created_at": "2026-05-23T12:40:04"
+    }
+  ],
+  "updated_at": "2026-05-27T15:00:33"
+}
