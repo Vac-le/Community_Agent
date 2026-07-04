@@ -1,4 +1,4 @@
-# 智慧社区便民服务平台 · Community_Agent
+# Community_Agent
 
 > 面向社区居民的智慧便民服务平台，以 **Community_Agent** 多 Agent AI 引擎为核心，整合微信小程序、管理后台、Java 业务后端与 Python 智能体服务，提供社区公告、餐饮配送、家政上门、代购服务、订单管理与 AI 智能问答等能力。
 
